@@ -1,10 +1,10 @@
-"system/cpu/cpuidle/current_governor_ro"	"qcom"
-"system/cpu/cpuidle/current_driver"	"msm_idle"
-"system/cpu/uevent"	""
-"system/cpu/hang_detect_core/pmu_event_sel"	"0x0"
-"system/cpu/hang_detect_core/threshold"	"0xb0101d"
-"system/cpu/hang_detect_core/enable"	"1"
-"system/cpu/hotplug/states"	"  0: offline
+"system/cpu/cpuidle/current_governor_ro","qcom"
+"system/cpu/cpuidle/current_driver","msm_idle"
+"system/cpu/uevent",""
+"system/cpu/hang_detect_core/pmu_event_sel","0x0"
+"system/cpu/hang_detect_core/threshold","0xb0101d"
+"system/cpu/hang_detect_core/enable","1"
+"system/cpu/hotplug/states","  0: offline
   1: threads:prepare
   2: perf:prepare
  11: slub:dead
@@ -76,504 +76,504 @@
 191: swap_slots_cache
 210: sched:active
 211: online"
-"system/cpu/cpu7/cpuidle/state1/disable"	"0"
-"system/cpu/cpu7/cpuidle/state1/above"	"0"
-"system/cpu/cpu7/cpuidle/state1/time"	"21562769406"
-"system/cpu/cpu7/cpuidle/state1/power"	"0"
-"system/cpu/cpu7/cpuidle/state1/residency"	"0"
-"system/cpu/cpu7/cpuidle/state1/latency"	"1061"
-"system/cpu/cpu7/cpuidle/state1/usage"	"101536"
-"system/cpu/cpu7/cpuidle/state1/desc"	"rail-pc"
-"system/cpu/cpu7/cpuidle/state1/below"	"0"
-"system/cpu/cpu7/cpuidle/state1/name"	"C1"
-"system/cpu/cpu7/cpuidle/state1/s2idle/time"	"0"
-"system/cpu/cpu7/cpuidle/state1/s2idle/usage"	"0"
-"system/cpu/cpu7/cpuidle/driver/name"	"msm_idle"
-"system/cpu/cpu7/cpuidle/state0/disable"	"0"
-"system/cpu/cpu7/cpuidle/state0/above"	"0"
-"system/cpu/cpu7/cpuidle/state0/time"	"1022496055"
-"system/cpu/cpu7/cpuidle/state0/power"	"0"
-"system/cpu/cpu7/cpuidle/state0/residency"	"0"
-"system/cpu/cpu7/cpuidle/state0/latency"	"43"
-"system/cpu/cpu7/cpuidle/state0/usage"	"1586525"
-"system/cpu/cpu7/cpuidle/state0/desc"	"wfi"
-"system/cpu/cpu7/cpuidle/state0/below"	"1025016"
-"system/cpu/cpu7/cpuidle/state0/name"	"C0"
-"system/cpu/cpu7/uevent"	"OF_NAME=cpu
+"system/cpu/cpu7/cpuidle/state1/disable","0"
+"system/cpu/cpu7/cpuidle/state1/above","0"
+"system/cpu/cpu7/cpuidle/state1/time","21562769406"
+"system/cpu/cpu7/cpuidle/state1/power","0"
+"system/cpu/cpu7/cpuidle/state1/residency","0"
+"system/cpu/cpu7/cpuidle/state1/latency","1061"
+"system/cpu/cpu7/cpuidle/state1/usage","101536"
+"system/cpu/cpu7/cpuidle/state1/desc","rail-pc"
+"system/cpu/cpu7/cpuidle/state1/below","0"
+"system/cpu/cpu7/cpuidle/state1/name","C1"
+"system/cpu/cpu7/cpuidle/state1/s2idle/time","0"
+"system/cpu/cpu7/cpuidle/state1/s2idle/usage","0"
+"system/cpu/cpu7/cpuidle/driver/name","msm_idle"
+"system/cpu/cpu7/cpuidle/state0/disable","0"
+"system/cpu/cpu7/cpuidle/state0/above","0"
+"system/cpu/cpu7/cpuidle/state0/time","1022496055"
+"system/cpu/cpu7/cpuidle/state0/power","0"
+"system/cpu/cpu7/cpuidle/state0/residency","0"
+"system/cpu/cpu7/cpuidle/state0/latency","43"
+"system/cpu/cpu7/cpuidle/state0/usage","1586525"
+"system/cpu/cpu7/cpuidle/state0/desc","wfi"
+"system/cpu/cpu7/cpuidle/state0/below","1025016"
+"system/cpu/cpu7/cpuidle/state0/name","C0"
+"system/cpu/cpu7/uevent","OF_NAME=cpu
 OF_FULLNAME=/cpus/cpu@700
 OF_TYPE=cpu
 OF_COMPATIBLE_0=qcom,kryo
 OF_COMPATIBLE_N=1
 MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
-"system/cpu/cpu7/hotplug/target"	"211"
-"system/cpu/cpu7/hotplug/state"	"211"
-"system/cpu/cpu7/hotplug/fail"	"-1"
-"system/cpu/cpu7/sched_load_boost"	"0"
-"system/cpu/cpu7/power/runtime_active_time"	"0"
-"system/cpu/cpu7/power/pm_qos_resume_latency_us"	"0"
-"system/cpu/cpu7/power/runtime_status"	"unsupported"
-"system/cpu/cpu7/power/autosuspend_delay_ms"	""
-"system/cpu/cpu7/power/runtime_suspended_time"	"0"
-"system/cpu/cpu7/power/control"	"auto"
-"system/cpu/cpu7/core_ctl/task_thres"	"1"
-"system/cpu/cpu7/core_ctl/max_cpus"	"1"
-"system/cpu/cpu7/core_ctl/need_cpus"	"1"
-"system/cpu/cpu7/core_ctl/offline_delay_ms"	"100"
-"system/cpu/cpu7/core_ctl/active_cpus"	"1"
-"system/cpu/cpu7/core_ctl/busy_down_thres"	"30 "
-"system/cpu/cpu7/core_ctl/nr_prev_assist_thresh"	"1"
-"system/cpu/cpu7/core_ctl/not_preferred"	"CPU#7: 0"
-"system/cpu/cpu7/core_ctl/global_state"	"CPU0
-	CPU: 0
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 7
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+"system/cpu/cpu7/hotplug/target","211"
+"system/cpu/cpu7/hotplug/state","211"
+"system/cpu/cpu7/hotplug/fail","-1"
+"system/cpu/cpu7/sched_load_boost","0"
+"system/cpu/cpu7/power/runtime_active_time","0"
+"system/cpu/cpu7/power/pm_qos_resume_latency_us","0"
+"system/cpu/cpu7/power/runtime_status","unsupported"
+"system/cpu/cpu7/power/autosuspend_delay_ms",""
+"system/cpu/cpu7/power/runtime_suspended_time","0"
+"system/cpu/cpu7/power/control","auto"
+"system/cpu/cpu7/core_ctl/task_thres","1"
+"system/cpu/cpu7/core_ctl/max_cpus","1"
+"system/cpu/cpu7/core_ctl/need_cpus","1"
+"system/cpu/cpu7/core_ctl/offline_delay_ms","100"
+"system/cpu/cpu7/core_ctl/active_cpus","1"
+"system/cpu/cpu7/core_ctl/busy_down_thres","30 "
+"system/cpu/cpu7/core_ctl/nr_prev_assist_thresh","1"
+"system/cpu/cpu7/core_ctl/not_preferred","CPU#7: 0"
+"system/cpu/cpu7/core_ctl/global_state","CPU0
+,CPU: 0
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 7
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU1
-	CPU: 1
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 2
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 1
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 2
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU2
-	CPU: 2
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 7
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 2
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 7
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU3
-	CPU: 3
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 8
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 3
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 8
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU4
-	CPU: 4
-	Online: 1
-	Isolated: 0
-	First CPU: 4
-	Busy%: 29
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 3
-	Need CPUs: 3
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 4
+,Online: 1
+,Isolated: 0
+,First CPU: 4
+,Busy%: 29
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 3
+,Need CPUs: 3
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU5
-	CPU: 5
-	Online: 1
-	Isolated: 0
-	First CPU: 4
-	Busy%: 16
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 3
-	Need CPUs: 3
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 5
+,Online: 1
+,Isolated: 0
+,First CPU: 4
+,Busy%: 16
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 3
+,Need CPUs: 3
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU6
-	CPU: 6
-	Online: 1
-	Isolated: 0
-	First CPU: 4
-	Busy%: 62
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 3
-	Need CPUs: 3
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 6
+,Online: 1
+,Isolated: 0
+,First CPU: 4
+,Busy%: 62
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 3
+,Need CPUs: 3
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU7
-	CPU: 7
-	Online: 1
-	Isolated: 0
-	First CPU: 7
-	Busy%: 100
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 1
-	Need CPUs: 1
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0"
-"system/cpu/cpu7/core_ctl/min_cpus"	"0"
-"system/cpu/cpu7/core_ctl/busy_up_thres"	"60 "
-"system/cpu/cpu7/core_ctl/enable"	"1"
-"system/cpu/cpu7/online"	"1"
-"system/cpu/cpu7/topology/die_id"	"-1"
-"system/cpu/cpu7/topology/physical_package_id"	"2"
-"system/cpu/cpu7/topology/core_cpus_list"	"7"
-"system/cpu/cpu7/topology/die_cpus_list"	"7"
-"system/cpu/cpu7/topology/core_siblings"	"80"
-"system/cpu/cpu7/topology/core_siblings_list"	"7"
-"system/cpu/cpu7/topology/package_cpus"	"80"
-"system/cpu/cpu7/topology/package_cpus_list"	"7"
-"system/cpu/cpu7/topology/die_cpus"	"80"
-"system/cpu/cpu7/topology/thread_siblings_list"	"7"
-"system/cpu/cpu7/topology/core_id"	"0"
-"system/cpu/cpu7/topology/core_cpus"	"80"
-"system/cpu/cpu7/topology/thread_siblings"	"80"
-"system/cpu/cpu7/cpu_capacity"	"1024"
-"system/cpu/cpu7/dcvsh_freq_limit"	"2841600"
-"system/cpu/cpu7/cache/uevent"	""
-"system/cpu/cpu7/cache/index2/uevent"	""
-"system/cpu/cpu7/cache/index2/shared_cpu_list"	"7"
-"system/cpu/cpu7/cache/index2/type"	"Unified"
-"system/cpu/cpu7/cache/index2/waiting_for_supplier"	"0"
-"system/cpu/cpu7/cache/index2/level"	"2"
-"system/cpu/cpu7/cache/index2/shared_cpu_map"	"80"
-"system/cpu/cpu7/cache/index0/uevent"	""
-"system/cpu/cpu7/cache/index0/shared_cpu_list"	"7"
-"system/cpu/cpu7/cache/index0/type"	"Data"
-"system/cpu/cpu7/cache/index0/waiting_for_supplier"	"0"
-"system/cpu/cpu7/cache/index0/level"	"1"
-"system/cpu/cpu7/cache/index0/shared_cpu_map"	"80"
-"system/cpu/cpu7/cache/index3/uevent"	""
-"system/cpu/cpu7/cache/index3/shared_cpu_list"	"0-7"
-"system/cpu/cpu7/cache/index3/type"	"Unified"
-"system/cpu/cpu7/cache/index3/waiting_for_supplier"	"0"
-"system/cpu/cpu7/cache/index3/level"	"3"
-"system/cpu/cpu7/cache/index3/shared_cpu_map"	"ff"
-"system/cpu/cpu7/cache/index1/uevent"	""
-"system/cpu/cpu7/cache/index1/shared_cpu_list"	"7"
-"system/cpu/cpu7/cache/index1/type"	"Instruction"
-"system/cpu/cpu7/cache/index1/waiting_for_supplier"	"0"
-"system/cpu/cpu7/cache/index1/level"	"1"
-"system/cpu/cpu7/cache/index1/shared_cpu_map"	"80"
-"system/cpu/cpu7/cache/waiting_for_supplier"	"0"
-"system/cpu/cpu7/isolate"	"0"
-"system/cpu/cpu7/waiting_for_supplier"	"0"
-"system/cpu/cpu7/regs/identification/revidr_el1"	"0x0000000000000001"
-"system/cpu/cpu7/regs/identification/midr_el1"	"0x00000000411fd440"
-"system/cpu/cpu5/cpuidle/state1/disable"	"0"
-"system/cpu/cpu5/cpuidle/state1/above"	"0"
-"system/cpu/cpu5/cpuidle/state1/time"	"18400884508"
-"system/cpu/cpu5/cpuidle/state1/power"	"0"
-"system/cpu/cpu5/cpuidle/state1/residency"	"0"
-"system/cpu/cpu5/cpuidle/state1/latency"	"1061"
-"system/cpu/cpu5/cpuidle/state1/usage"	"322753"
-"system/cpu/cpu5/cpuidle/state1/desc"	"rail-pc"
-"system/cpu/cpu5/cpuidle/state1/below"	"0"
-"system/cpu/cpu5/cpuidle/state1/name"	"C1"
-"system/cpu/cpu5/cpuidle/state1/s2idle/time"	"0"
-"system/cpu/cpu5/cpuidle/state1/s2idle/usage"	"0"
-"system/cpu/cpu5/cpuidle/driver/name"	"msm_idle"
-"system/cpu/cpu5/cpuidle/state0/disable"	"0"
-"system/cpu/cpu5/cpuidle/state0/above"	"0"
-"system/cpu/cpu5/cpuidle/state0/time"	"3624120213"
-"system/cpu/cpu5/cpuidle/state0/power"	"0"
-"system/cpu/cpu5/cpuidle/state0/residency"	"0"
-"system/cpu/cpu5/cpuidle/state0/latency"	"43"
-"system/cpu/cpu5/cpuidle/state0/usage"	"2741855"
-"system/cpu/cpu5/cpuidle/state0/desc"	"wfi"
-"system/cpu/cpu5/cpuidle/state0/below"	"2024023"
-"system/cpu/cpu5/cpuidle/state0/name"	"C0"
-"system/cpu/cpu5/uevent"	"OF_NAME=cpu
+,CPU: 7
+,Online: 1
+,Isolated: 0
+,First CPU: 7
+,Busy%: 100
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 1
+,Need CPUs: 1
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0"
+"system/cpu/cpu7/core_ctl/min_cpus","0"
+"system/cpu/cpu7/core_ctl/busy_up_thres","60 "
+"system/cpu/cpu7/core_ctl/enable","1"
+"system/cpu/cpu7/online","1"
+"system/cpu/cpu7/topology/die_id","-1"
+"system/cpu/cpu7/topology/physical_package_id","2"
+"system/cpu/cpu7/topology/core_cpus_list","7"
+"system/cpu/cpu7/topology/die_cpus_list","7"
+"system/cpu/cpu7/topology/core_siblings","80"
+"system/cpu/cpu7/topology/core_siblings_list","7"
+"system/cpu/cpu7/topology/package_cpus","80"
+"system/cpu/cpu7/topology/package_cpus_list","7"
+"system/cpu/cpu7/topology/die_cpus","80"
+"system/cpu/cpu7/topology/thread_siblings_list","7"
+"system/cpu/cpu7/topology/core_id","0"
+"system/cpu/cpu7/topology/core_cpus","80"
+"system/cpu/cpu7/topology/thread_siblings","80"
+"system/cpu/cpu7/cpu_capacity","1024"
+"system/cpu/cpu7/dcvsh_freq_limit","2841600"
+"system/cpu/cpu7/cache/uevent",""
+"system/cpu/cpu7/cache/index2/uevent",""
+"system/cpu/cpu7/cache/index2/shared_cpu_list","7"
+"system/cpu/cpu7/cache/index2/type","Unified"
+"system/cpu/cpu7/cache/index2/waiting_for_supplier","0"
+"system/cpu/cpu7/cache/index2/level","2"
+"system/cpu/cpu7/cache/index2/shared_cpu_map","80"
+"system/cpu/cpu7/cache/index0/uevent",""
+"system/cpu/cpu7/cache/index0/shared_cpu_list","7"
+"system/cpu/cpu7/cache/index0/type","Data"
+"system/cpu/cpu7/cache/index0/waiting_for_supplier","0"
+"system/cpu/cpu7/cache/index0/level","1"
+"system/cpu/cpu7/cache/index0/shared_cpu_map","80"
+"system/cpu/cpu7/cache/index3/uevent",""
+"system/cpu/cpu7/cache/index3/shared_cpu_list","0-7"
+"system/cpu/cpu7/cache/index3/type","Unified"
+"system/cpu/cpu7/cache/index3/waiting_for_supplier","0"
+"system/cpu/cpu7/cache/index3/level","3"
+"system/cpu/cpu7/cache/index3/shared_cpu_map","ff"
+"system/cpu/cpu7/cache/index1/uevent",""
+"system/cpu/cpu7/cache/index1/shared_cpu_list","7"
+"system/cpu/cpu7/cache/index1/type","Instruction"
+"system/cpu/cpu7/cache/index1/waiting_for_supplier","0"
+"system/cpu/cpu7/cache/index1/level","1"
+"system/cpu/cpu7/cache/index1/shared_cpu_map","80"
+"system/cpu/cpu7/cache/waiting_for_supplier","0"
+"system/cpu/cpu7/isolate","0"
+"system/cpu/cpu7/waiting_for_supplier","0"
+"system/cpu/cpu7/regs/identification/revidr_el1","0x0000000000000001"
+"system/cpu/cpu7/regs/identification/midr_el1","0x00000000411fd440"
+"system/cpu/cpu5/cpuidle/state1/disable","0"
+"system/cpu/cpu5/cpuidle/state1/above","0"
+"system/cpu/cpu5/cpuidle/state1/time","18400884508"
+"system/cpu/cpu5/cpuidle/state1/power","0"
+"system/cpu/cpu5/cpuidle/state1/residency","0"
+"system/cpu/cpu5/cpuidle/state1/latency","1061"
+"system/cpu/cpu5/cpuidle/state1/usage","322753"
+"system/cpu/cpu5/cpuidle/state1/desc","rail-pc"
+"system/cpu/cpu5/cpuidle/state1/below","0"
+"system/cpu/cpu5/cpuidle/state1/name","C1"
+"system/cpu/cpu5/cpuidle/state1/s2idle/time","0"
+"system/cpu/cpu5/cpuidle/state1/s2idle/usage","0"
+"system/cpu/cpu5/cpuidle/driver/name","msm_idle"
+"system/cpu/cpu5/cpuidle/state0/disable","0"
+"system/cpu/cpu5/cpuidle/state0/above","0"
+"system/cpu/cpu5/cpuidle/state0/time","3624120213"
+"system/cpu/cpu5/cpuidle/state0/power","0"
+"system/cpu/cpu5/cpuidle/state0/residency","0"
+"system/cpu/cpu5/cpuidle/state0/latency","43"
+"system/cpu/cpu5/cpuidle/state0/usage","2741855"
+"system/cpu/cpu5/cpuidle/state0/desc","wfi"
+"system/cpu/cpu5/cpuidle/state0/below","2024023"
+"system/cpu/cpu5/cpuidle/state0/name","C0"
+"system/cpu/cpu5/uevent","OF_NAME=cpu
 OF_FULLNAME=/cpus/cpu@500
 OF_TYPE=cpu
 OF_COMPATIBLE_0=qcom,kryo
 OF_COMPATIBLE_N=1
 MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
-"system/cpu/cpu5/hotplug/target"	"211"
-"system/cpu/cpu5/hotplug/state"	"211"
-"system/cpu/cpu5/hotplug/fail"	"-1"
-"system/cpu/cpu5/sched_load_boost"	"0"
-"system/cpu/cpu5/power/runtime_active_time"	"0"
-"system/cpu/cpu5/power/pm_qos_resume_latency_us"	"0"
-"system/cpu/cpu5/power/runtime_status"	"unsupported"
-"system/cpu/cpu5/power/autosuspend_delay_ms"	""
-"system/cpu/cpu5/power/runtime_suspended_time"	"0"
-"system/cpu/cpu5/power/control"	"auto"
-"system/cpu/cpu5/online"	"1"
-"system/cpu/cpu5/topology/die_id"	"-1"
-"system/cpu/cpu5/topology/physical_package_id"	"1"
-"system/cpu/cpu5/topology/core_cpus_list"	"5"
-"system/cpu/cpu5/topology/die_cpus_list"	"5"
-"system/cpu/cpu5/topology/core_siblings"	"70"
-"system/cpu/cpu5/topology/core_siblings_list"	"4-6"
-"system/cpu/cpu5/topology/package_cpus"	"70"
-"system/cpu/cpu5/topology/package_cpus_list"	"4-6"
-"system/cpu/cpu5/topology/die_cpus"	"20"
-"system/cpu/cpu5/topology/thread_siblings_list"	"5"
-"system/cpu/cpu5/topology/core_id"	"1"
-"system/cpu/cpu5/topology/core_cpus"	"20"
-"system/cpu/cpu5/topology/thread_siblings"	"20"
-"system/cpu/cpu5/cpu_capacity"	"828"
-"system/cpu/cpu5/cache/uevent"	""
-"system/cpu/cpu5/cache/index2/uevent"	""
-"system/cpu/cpu5/cache/index2/shared_cpu_list"	"5"
-"system/cpu/cpu5/cache/index2/type"	"Unified"
-"system/cpu/cpu5/cache/index2/waiting_for_supplier"	"0"
-"system/cpu/cpu5/cache/index2/level"	"2"
-"system/cpu/cpu5/cache/index2/shared_cpu_map"	"20"
-"system/cpu/cpu5/cache/index0/uevent"	""
-"system/cpu/cpu5/cache/index0/shared_cpu_list"	"5"
-"system/cpu/cpu5/cache/index0/type"	"Data"
-"system/cpu/cpu5/cache/index0/waiting_for_supplier"	"0"
-"system/cpu/cpu5/cache/index0/level"	"1"
-"system/cpu/cpu5/cache/index0/shared_cpu_map"	"20"
-"system/cpu/cpu5/cache/index3/uevent"	""
-"system/cpu/cpu5/cache/index3/shared_cpu_list"	"0-7"
-"system/cpu/cpu5/cache/index3/type"	"Unified"
-"system/cpu/cpu5/cache/index3/waiting_for_supplier"	"0"
-"system/cpu/cpu5/cache/index3/level"	"3"
-"system/cpu/cpu5/cache/index3/shared_cpu_map"	"ff"
-"system/cpu/cpu5/cache/index1/uevent"	""
-"system/cpu/cpu5/cache/index1/shared_cpu_list"	"5"
-"system/cpu/cpu5/cache/index1/type"	"Instruction"
-"system/cpu/cpu5/cache/index1/waiting_for_supplier"	"0"
-"system/cpu/cpu5/cache/index1/level"	"1"
-"system/cpu/cpu5/cache/index1/shared_cpu_map"	"20"
-"system/cpu/cpu5/cache/waiting_for_supplier"	"0"
-"system/cpu/cpu5/isolate"	"0"
-"system/cpu/cpu5/waiting_for_supplier"	"0"
-"system/cpu/cpu5/regs/identification/revidr_el1"	"0x0000000000000001"
-"system/cpu/cpu5/regs/identification/midr_el1"	"0x00000000411fd410"
-"system/cpu/possible"	"0-7"
-"system/cpu/offline"	""
-"system/cpu/present"	"0-7"
-"system/cpu/power/runtime_active_time"	"0"
-"system/cpu/power/runtime_status"	"unsupported"
-"system/cpu/power/autosuspend_delay_ms"	""
-"system/cpu/power/runtime_suspended_time"	"0"
-"system/cpu/power/control"	"auto"
-"system/cpu/cpu3/cpuidle/state1/disable"	"0"
-"system/cpu/cpu3/cpuidle/state1/above"	"0"
-"system/cpu/cpu3/cpuidle/state1/time"	"10981801294"
-"system/cpu/cpu3/cpuidle/state1/power"	"0"
-"system/cpu/cpu3/cpuidle/state1/residency"	"0"
-"system/cpu/cpu3/cpuidle/state1/latency"	"531"
-"system/cpu/cpu3/cpuidle/state1/usage"	"1216230"
-"system/cpu/cpu3/cpuidle/state1/desc"	"rail-pc"
-"system/cpu/cpu3/cpuidle/state1/below"	"0"
-"system/cpu/cpu3/cpuidle/state1/name"	"C1"
-"system/cpu/cpu3/cpuidle/state1/s2idle/time"	"0"
-"system/cpu/cpu3/cpuidle/state1/s2idle/usage"	"0"
-"system/cpu/cpu3/cpuidle/driver/name"	"msm_idle"
-"system/cpu/cpu3/cpuidle/state0/disable"	"0"
-"system/cpu/cpu3/cpuidle/state0/above"	"0"
-"system/cpu/cpu3/cpuidle/state0/time"	"8440943023"
-"system/cpu/cpu3/cpuidle/state0/power"	"0"
-"system/cpu/cpu3/cpuidle/state0/residency"	"0"
-"system/cpu/cpu3/cpuidle/state0/latency"	"43"
-"system/cpu/cpu3/cpuidle/state0/usage"	"8641570"
-"system/cpu/cpu3/cpuidle/state0/desc"	"wfi"
-"system/cpu/cpu3/cpuidle/state0/below"	"7236534"
-"system/cpu/cpu3/cpuidle/state0/name"	"C0"
-"system/cpu/cpu3/uevent"	"OF_NAME=cpu
+"system/cpu/cpu5/hotplug/target","211"
+"system/cpu/cpu5/hotplug/state","211"
+"system/cpu/cpu5/hotplug/fail","-1"
+"system/cpu/cpu5/sched_load_boost","0"
+"system/cpu/cpu5/power/runtime_active_time","0"
+"system/cpu/cpu5/power/pm_qos_resume_latency_us","0"
+"system/cpu/cpu5/power/runtime_status","unsupported"
+"system/cpu/cpu5/power/autosuspend_delay_ms",""
+"system/cpu/cpu5/power/runtime_suspended_time","0"
+"system/cpu/cpu5/power/control","auto"
+"system/cpu/cpu5/online","1"
+"system/cpu/cpu5/topology/die_id","-1"
+"system/cpu/cpu5/topology/physical_package_id","1"
+"system/cpu/cpu5/topology/core_cpus_list","5"
+"system/cpu/cpu5/topology/die_cpus_list","5"
+"system/cpu/cpu5/topology/core_siblings","70"
+"system/cpu/cpu5/topology/core_siblings_list","4-6"
+"system/cpu/cpu5/topology/package_cpus","70"
+"system/cpu/cpu5/topology/package_cpus_list","4-6"
+"system/cpu/cpu5/topology/die_cpus","20"
+"system/cpu/cpu5/topology/thread_siblings_list","5"
+"system/cpu/cpu5/topology/core_id","1"
+"system/cpu/cpu5/topology/core_cpus","20"
+"system/cpu/cpu5/topology/thread_siblings","20"
+"system/cpu/cpu5/cpu_capacity","828"
+"system/cpu/cpu5/cache/uevent",""
+"system/cpu/cpu5/cache/index2/uevent",""
+"system/cpu/cpu5/cache/index2/shared_cpu_list","5"
+"system/cpu/cpu5/cache/index2/type","Unified"
+"system/cpu/cpu5/cache/index2/waiting_for_supplier","0"
+"system/cpu/cpu5/cache/index2/level","2"
+"system/cpu/cpu5/cache/index2/shared_cpu_map","20"
+"system/cpu/cpu5/cache/index0/uevent",""
+"system/cpu/cpu5/cache/index0/shared_cpu_list","5"
+"system/cpu/cpu5/cache/index0/type","Data"
+"system/cpu/cpu5/cache/index0/waiting_for_supplier","0"
+"system/cpu/cpu5/cache/index0/level","1"
+"system/cpu/cpu5/cache/index0/shared_cpu_map","20"
+"system/cpu/cpu5/cache/index3/uevent",""
+"system/cpu/cpu5/cache/index3/shared_cpu_list","0-7"
+"system/cpu/cpu5/cache/index3/type","Unified"
+"system/cpu/cpu5/cache/index3/waiting_for_supplier","0"
+"system/cpu/cpu5/cache/index3/level","3"
+"system/cpu/cpu5/cache/index3/shared_cpu_map","ff"
+"system/cpu/cpu5/cache/index1/uevent",""
+"system/cpu/cpu5/cache/index1/shared_cpu_list","5"
+"system/cpu/cpu5/cache/index1/type","Instruction"
+"system/cpu/cpu5/cache/index1/waiting_for_supplier","0"
+"system/cpu/cpu5/cache/index1/level","1"
+"system/cpu/cpu5/cache/index1/shared_cpu_map","20"
+"system/cpu/cpu5/cache/waiting_for_supplier","0"
+"system/cpu/cpu5/isolate","0"
+"system/cpu/cpu5/waiting_for_supplier","0"
+"system/cpu/cpu5/regs/identification/revidr_el1","0x0000000000000001"
+"system/cpu/cpu5/regs/identification/midr_el1","0x00000000411fd410"
+"system/cpu/possible","0-7"
+"system/cpu/offline",""
+"system/cpu/present","0-7"
+"system/cpu/power/runtime_active_time","0"
+"system/cpu/power/runtime_status","unsupported"
+"system/cpu/power/autosuspend_delay_ms",""
+"system/cpu/power/runtime_suspended_time","0"
+"system/cpu/power/control","auto"
+"system/cpu/cpu3/cpuidle/state1/disable","0"
+"system/cpu/cpu3/cpuidle/state1/above","0"
+"system/cpu/cpu3/cpuidle/state1/time","10981801294"
+"system/cpu/cpu3/cpuidle/state1/power","0"
+"system/cpu/cpu3/cpuidle/state1/residency","0"
+"system/cpu/cpu3/cpuidle/state1/latency","531"
+"system/cpu/cpu3/cpuidle/state1/usage","1216230"
+"system/cpu/cpu3/cpuidle/state1/desc","rail-pc"
+"system/cpu/cpu3/cpuidle/state1/below","0"
+"system/cpu/cpu3/cpuidle/state1/name","C1"
+"system/cpu/cpu3/cpuidle/state1/s2idle/time","0"
+"system/cpu/cpu3/cpuidle/state1/s2idle/usage","0"
+"system/cpu/cpu3/cpuidle/driver/name","msm_idle"
+"system/cpu/cpu3/cpuidle/state0/disable","0"
+"system/cpu/cpu3/cpuidle/state0/above","0"
+"system/cpu/cpu3/cpuidle/state0/time","8440943023"
+"system/cpu/cpu3/cpuidle/state0/power","0"
+"system/cpu/cpu3/cpuidle/state0/residency","0"
+"system/cpu/cpu3/cpuidle/state0/latency","43"
+"system/cpu/cpu3/cpuidle/state0/usage","8641570"
+"system/cpu/cpu3/cpuidle/state0/desc","wfi"
+"system/cpu/cpu3/cpuidle/state0/below","7236534"
+"system/cpu/cpu3/cpuidle/state0/name","C0"
+"system/cpu/cpu3/uevent","OF_NAME=cpu
 OF_FULLNAME=/cpus/cpu@300
 OF_TYPE=cpu
 OF_COMPATIBLE_0=qcom,kryo
 OF_COMPATIBLE_N=1
 MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
-"system/cpu/cpu3/hotplug/target"	"211"
-"system/cpu/cpu3/hotplug/state"	"211"
-"system/cpu/cpu3/hotplug/fail"	"-1"
-"system/cpu/cpu3/sched_load_boost"	"0"
-"system/cpu/cpu3/power/runtime_active_time"	"0"
-"system/cpu/cpu3/power/pm_qos_resume_latency_us"	"0"
-"system/cpu/cpu3/power/runtime_status"	"unsupported"
-"system/cpu/cpu3/power/autosuspend_delay_ms"	""
-"system/cpu/cpu3/power/runtime_suspended_time"	"0"
-"system/cpu/cpu3/power/control"	"auto"
-"system/cpu/cpu3/online"	"1"
-"system/cpu/cpu3/topology/die_id"	"-1"
-"system/cpu/cpu3/topology/physical_package_id"	"0"
-"system/cpu/cpu3/topology/core_cpus_list"	"3"
-"system/cpu/cpu3/topology/die_cpus_list"	"3"
-"system/cpu/cpu3/topology/core_siblings"	"0f"
-"system/cpu/cpu3/topology/core_siblings_list"	"0-3"
-"system/cpu/cpu3/topology/package_cpus"	"0f"
-"system/cpu/cpu3/topology/package_cpus_list"	"0-3"
-"system/cpu/cpu3/topology/die_cpus"	"08"
-"system/cpu/cpu3/topology/thread_siblings_list"	"3"
-"system/cpu/cpu3/topology/core_id"	"3"
-"system/cpu/cpu3/topology/core_cpus"	"08"
-"system/cpu/cpu3/topology/thread_siblings"	"08"
-"system/cpu/cpu3/cpu_capacity"	"325"
-"system/cpu/cpu3/cache/uevent"	""
-"system/cpu/cpu3/cache/index2/uevent"	""
-"system/cpu/cpu3/cache/index2/shared_cpu_list"	"3"
-"system/cpu/cpu3/cache/index2/type"	"Unified"
-"system/cpu/cpu3/cache/index2/waiting_for_supplier"	"0"
-"system/cpu/cpu3/cache/index2/level"	"2"
-"system/cpu/cpu3/cache/index2/shared_cpu_map"	"08"
-"system/cpu/cpu3/cache/index0/uevent"	""
-"system/cpu/cpu3/cache/index0/shared_cpu_list"	"3"
-"system/cpu/cpu3/cache/index0/type"	"Data"
-"system/cpu/cpu3/cache/index0/waiting_for_supplier"	"0"
-"system/cpu/cpu3/cache/index0/level"	"1"
-"system/cpu/cpu3/cache/index0/shared_cpu_map"	"08"
-"system/cpu/cpu3/cache/index3/uevent"	""
-"system/cpu/cpu3/cache/index3/shared_cpu_list"	"0-7"
-"system/cpu/cpu3/cache/index3/type"	"Unified"
-"system/cpu/cpu3/cache/index3/waiting_for_supplier"	"0"
-"system/cpu/cpu3/cache/index3/level"	"3"
-"system/cpu/cpu3/cache/index3/shared_cpu_map"	"ff"
-"system/cpu/cpu3/cache/index1/uevent"	""
-"system/cpu/cpu3/cache/index1/shared_cpu_list"	"3"
-"system/cpu/cpu3/cache/index1/type"	"Instruction"
-"system/cpu/cpu3/cache/index1/waiting_for_supplier"	"0"
-"system/cpu/cpu3/cache/index1/level"	"1"
-"system/cpu/cpu3/cache/index1/shared_cpu_map"	"08"
-"system/cpu/cpu3/cache/waiting_for_supplier"	"0"
-"system/cpu/cpu3/isolate"	"0"
-"system/cpu/cpu3/waiting_for_supplier"	"0"
-"system/cpu/cpu3/regs/identification/revidr_el1"	"0x0000000000000000"
-"system/cpu/cpu3/regs/identification/midr_el1"	"0x00000000412fd050"
-"system/cpu/online"	"0-7"
-"system/cpu/core_ctl_isolated"	""
-"system/cpu/cpu1/cpuidle/state1/disable"	"0"
-"system/cpu/cpu1/cpuidle/state1/above"	"0"
-"system/cpu/cpu1/cpuidle/state1/time"	"10923155239"
-"system/cpu/cpu1/cpuidle/state1/power"	"0"
-"system/cpu/cpu1/cpuidle/state1/residency"	"0"
-"system/cpu/cpu1/cpuidle/state1/latency"	"531"
-"system/cpu/cpu1/cpuidle/state1/usage"	"1107830"
-"system/cpu/cpu1/cpuidle/state1/desc"	"rail-pc"
-"system/cpu/cpu1/cpuidle/state1/below"	"0"
-"system/cpu/cpu1/cpuidle/state1/name"	"C1"
-"system/cpu/cpu1/cpuidle/state1/s2idle/time"	"0"
-"system/cpu/cpu1/cpuidle/state1/s2idle/usage"	"0"
-"system/cpu/cpu1/cpuidle/driver/name"	"msm_idle"
-"system/cpu/cpu1/cpuidle/state0/disable"	"0"
-"system/cpu/cpu1/cpuidle/state0/above"	"0"
-"system/cpu/cpu1/cpuidle/state0/time"	"8563032742"
-"system/cpu/cpu1/cpuidle/state0/power"	"0"
-"system/cpu/cpu1/cpuidle/state0/residency"	"0"
-"system/cpu/cpu1/cpuidle/state0/latency"	"43"
-"system/cpu/cpu1/cpuidle/state0/usage"	"8912512"
-"system/cpu/cpu1/cpuidle/state0/desc"	"wfi"
-"system/cpu/cpu1/cpuidle/state0/below"	"7415567"
-"system/cpu/cpu1/cpuidle/state0/name"	"C0"
-"system/cpu/cpu1/uevent"	"OF_NAME=cpu
+"system/cpu/cpu3/hotplug/target","211"
+"system/cpu/cpu3/hotplug/state","211"
+"system/cpu/cpu3/hotplug/fail","-1"
+"system/cpu/cpu3/sched_load_boost","0"
+"system/cpu/cpu3/power/runtime_active_time","0"
+"system/cpu/cpu3/power/pm_qos_resume_latency_us","0"
+"system/cpu/cpu3/power/runtime_status","unsupported"
+"system/cpu/cpu3/power/autosuspend_delay_ms",""
+"system/cpu/cpu3/power/runtime_suspended_time","0"
+"system/cpu/cpu3/power/control","auto"
+"system/cpu/cpu3/online","1"
+"system/cpu/cpu3/topology/die_id","-1"
+"system/cpu/cpu3/topology/physical_package_id","0"
+"system/cpu/cpu3/topology/core_cpus_list","3"
+"system/cpu/cpu3/topology/die_cpus_list","3"
+"system/cpu/cpu3/topology/core_siblings","0f"
+"system/cpu/cpu3/topology/core_siblings_list","0-3"
+"system/cpu/cpu3/topology/package_cpus","0f"
+"system/cpu/cpu3/topology/package_cpus_list","0-3"
+"system/cpu/cpu3/topology/die_cpus","08"
+"system/cpu/cpu3/topology/thread_siblings_list","3"
+"system/cpu/cpu3/topology/core_id","3"
+"system/cpu/cpu3/topology/core_cpus","08"
+"system/cpu/cpu3/topology/thread_siblings","08"
+"system/cpu/cpu3/cpu_capacity","325"
+"system/cpu/cpu3/cache/uevent",""
+"system/cpu/cpu3/cache/index2/uevent",""
+"system/cpu/cpu3/cache/index2/shared_cpu_list","3"
+"system/cpu/cpu3/cache/index2/type","Unified"
+"system/cpu/cpu3/cache/index2/waiting_for_supplier","0"
+"system/cpu/cpu3/cache/index2/level","2"
+"system/cpu/cpu3/cache/index2/shared_cpu_map","08"
+"system/cpu/cpu3/cache/index0/uevent",""
+"system/cpu/cpu3/cache/index0/shared_cpu_list","3"
+"system/cpu/cpu3/cache/index0/type","Data"
+"system/cpu/cpu3/cache/index0/waiting_for_supplier","0"
+"system/cpu/cpu3/cache/index0/level","1"
+"system/cpu/cpu3/cache/index0/shared_cpu_map","08"
+"system/cpu/cpu3/cache/index3/uevent",""
+"system/cpu/cpu3/cache/index3/shared_cpu_list","0-7"
+"system/cpu/cpu3/cache/index3/type","Unified"
+"system/cpu/cpu3/cache/index3/waiting_for_supplier","0"
+"system/cpu/cpu3/cache/index3/level","3"
+"system/cpu/cpu3/cache/index3/shared_cpu_map","ff"
+"system/cpu/cpu3/cache/index1/uevent",""
+"system/cpu/cpu3/cache/index1/shared_cpu_list","3"
+"system/cpu/cpu3/cache/index1/type","Instruction"
+"system/cpu/cpu3/cache/index1/waiting_for_supplier","0"
+"system/cpu/cpu3/cache/index1/level","1"
+"system/cpu/cpu3/cache/index1/shared_cpu_map","08"
+"system/cpu/cpu3/cache/waiting_for_supplier","0"
+"system/cpu/cpu3/isolate","0"
+"system/cpu/cpu3/waiting_for_supplier","0"
+"system/cpu/cpu3/regs/identification/revidr_el1","0x0000000000000000"
+"system/cpu/cpu3/regs/identification/midr_el1","0x00000000412fd050"
+"system/cpu/online","0-7"
+"system/cpu/core_ctl_isolated",""
+"system/cpu/cpu1/cpuidle/state1/disable","0"
+"system/cpu/cpu1/cpuidle/state1/above","0"
+"system/cpu/cpu1/cpuidle/state1/time","10923155239"
+"system/cpu/cpu1/cpuidle/state1/power","0"
+"system/cpu/cpu1/cpuidle/state1/residency","0"
+"system/cpu/cpu1/cpuidle/state1/latency","531"
+"system/cpu/cpu1/cpuidle/state1/usage","1107830"
+"system/cpu/cpu1/cpuidle/state1/desc","rail-pc"
+"system/cpu/cpu1/cpuidle/state1/below","0"
+"system/cpu/cpu1/cpuidle/state1/name","C1"
+"system/cpu/cpu1/cpuidle/state1/s2idle/time","0"
+"system/cpu/cpu1/cpuidle/state1/s2idle/usage","0"
+"system/cpu/cpu1/cpuidle/driver/name","msm_idle"
+"system/cpu/cpu1/cpuidle/state0/disable","0"
+"system/cpu/cpu1/cpuidle/state0/above","0"
+"system/cpu/cpu1/cpuidle/state0/time","8563032742"
+"system/cpu/cpu1/cpuidle/state0/power","0"
+"system/cpu/cpu1/cpuidle/state0/residency","0"
+"system/cpu/cpu1/cpuidle/state0/latency","43"
+"system/cpu/cpu1/cpuidle/state0/usage","8912512"
+"system/cpu/cpu1/cpuidle/state0/desc","wfi"
+"system/cpu/cpu1/cpuidle/state0/below","7415567"
+"system/cpu/cpu1/cpuidle/state0/name","C0"
+"system/cpu/cpu1/uevent","OF_NAME=cpu
 OF_FULLNAME=/cpus/cpu@100
 OF_TYPE=cpu
 OF_COMPATIBLE_0=qcom,kryo
 OF_COMPATIBLE_N=1
 MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
-"system/cpu/cpu1/hotplug/target"	"211"
-"system/cpu/cpu1/hotplug/state"	"211"
-"system/cpu/cpu1/hotplug/fail"	"-1"
-"system/cpu/cpu1/sched_load_boost"	"0"
-"system/cpu/cpu1/power/runtime_active_time"	"0"
-"system/cpu/cpu1/power/pm_qos_resume_latency_us"	"0"
-"system/cpu/cpu1/power/runtime_status"	"unsupported"
-"system/cpu/cpu1/power/autosuspend_delay_ms"	""
-"system/cpu/cpu1/power/runtime_suspended_time"	"0"
-"system/cpu/cpu1/power/control"	"auto"
-"system/cpu/cpu1/online"	"1"
-"system/cpu/cpu1/topology/die_id"	"-1"
-"system/cpu/cpu1/topology/physical_package_id"	"0"
-"system/cpu/cpu1/topology/core_cpus_list"	"1"
-"system/cpu/cpu1/topology/die_cpus_list"	"1"
-"system/cpu/cpu1/topology/core_siblings"	"0f"
-"system/cpu/cpu1/topology/core_siblings_list"	"0-3"
-"system/cpu/cpu1/topology/package_cpus"	"0f"
-"system/cpu/cpu1/topology/package_cpus_list"	"0-3"
-"system/cpu/cpu1/topology/die_cpus"	"02"
-"system/cpu/cpu1/topology/thread_siblings_list"	"1"
-"system/cpu/cpu1/topology/core_id"	"1"
-"system/cpu/cpu1/topology/core_cpus"	"02"
-"system/cpu/cpu1/topology/thread_siblings"	"02"
-"system/cpu/cpu1/cpu_capacity"	"325"
-"system/cpu/cpu1/cache/uevent"	""
-"system/cpu/cpu1/cache/index2/uevent"	""
-"system/cpu/cpu1/cache/index2/shared_cpu_list"	"1"
-"system/cpu/cpu1/cache/index2/type"	"Unified"
-"system/cpu/cpu1/cache/index2/waiting_for_supplier"	"0"
-"system/cpu/cpu1/cache/index2/level"	"2"
-"system/cpu/cpu1/cache/index2/shared_cpu_map"	"02"
-"system/cpu/cpu1/cache/index0/uevent"	""
-"system/cpu/cpu1/cache/index0/shared_cpu_list"	"1"
-"system/cpu/cpu1/cache/index0/type"	"Data"
-"system/cpu/cpu1/cache/index0/waiting_for_supplier"	"0"
-"system/cpu/cpu1/cache/index0/level"	"1"
-"system/cpu/cpu1/cache/index0/shared_cpu_map"	"02"
-"system/cpu/cpu1/cache/index3/uevent"	""
-"system/cpu/cpu1/cache/index3/shared_cpu_list"	"0-7"
-"system/cpu/cpu1/cache/index3/type"	"Unified"
-"system/cpu/cpu1/cache/index3/waiting_for_supplier"	"0"
-"system/cpu/cpu1/cache/index3/level"	"3"
-"system/cpu/cpu1/cache/index3/shared_cpu_map"	"ff"
-"system/cpu/cpu1/cache/index1/uevent"	""
-"system/cpu/cpu1/cache/index1/shared_cpu_list"	"1"
-"system/cpu/cpu1/cache/index1/type"	"Instruction"
-"system/cpu/cpu1/cache/index1/waiting_for_supplier"	"0"
-"system/cpu/cpu1/cache/index1/level"	"1"
-"system/cpu/cpu1/cache/index1/shared_cpu_map"	"02"
-"system/cpu/cpu1/cache/waiting_for_supplier"	"0"
-"system/cpu/cpu1/isolate"	"0"
-"system/cpu/cpu1/waiting_for_supplier"	"0"
-"system/cpu/cpu1/regs/identification/revidr_el1"	"0x0000000000000000"
-"system/cpu/cpu1/regs/identification/midr_el1"	"0x00000000412fd050"
-"system/cpu/smt/control"	"notimplemented"
-"system/cpu/smt/active"	"0"
-"system/cpu/vulnerabilities/spectre_v2"	"Not affected"
-"system/cpu/vulnerabilities/itlb_multihit"	"Not affected"
-"system/cpu/vulnerabilities/mds"	"Not affected"
-"system/cpu/vulnerabilities/l1tf"	"Not affected"
-"system/cpu/vulnerabilities/spec_store_bypass"	"Mitigation: Speculative Store Bypass disabled via prctl"
-"system/cpu/vulnerabilities/tsx_async_abort"	"Not affected"
-"system/cpu/vulnerabilities/spectre_v1"	"Mitigation: __user pointer sanitization"
-"system/cpu/vulnerabilities/srbds"	"Not affected"
-"system/cpu/vulnerabilities/meltdown"	"Not affected"
-"system/cpu/cpufreq/policy4/scaling_min_freq"	"2419200"
-"system/cpu/cpufreq/policy4/scaling_available_governors"	"conservative powersave performance schedutil "
-"system/cpu/cpufreq/policy4/scaling_boost_frequencies"	""
-"system/cpu/cpufreq/policy4/cpuinfo_max_freq"	"2419200"
-"system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us"	"0"
-"system/cpu/cpufreq/policy4/schedutil/pl"	"1"
-"system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq"	"0"
-"system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us"	"0"
-"system/cpu/cpufreq/policy4/schedutil/target_loads"	"80 1996800:95"
-"system/cpu/cpufreq/policy4/schedutil/hispeed_load"	"90"
-"system/cpu/cpufreq/policy4/schedutil/hispeed_freq"	"1555200"
-"system/cpu/cpufreq/policy4/scaling_available_frequencies"	"710400 844800 960000 1075200 1209600 1324800 1440000 1555200 1670400 1766400 1881600 1996800 2112000 2227200 2342400 2419200 "
-"system/cpu/cpufreq/policy4/related_cpus"	"4 5 6"
-"system/cpu/cpufreq/policy4/scaling_cur_freq"	"2419200"
-"system/cpu/cpufreq/policy4/scaling_setspeed"	"<unsupported>"
-"system/cpu/cpufreq/policy4/freq_change_info"	"policy->org_max=0,policy->change_comm="
-"system/cpu/cpufreq/policy4/stats/trans_table"	"   From  :    To
+"system/cpu/cpu1/hotplug/target","211"
+"system/cpu/cpu1/hotplug/state","211"
+"system/cpu/cpu1/hotplug/fail","-1"
+"system/cpu/cpu1/sched_load_boost","0"
+"system/cpu/cpu1/power/runtime_active_time","0"
+"system/cpu/cpu1/power/pm_qos_resume_latency_us","0"
+"system/cpu/cpu1/power/runtime_status","unsupported"
+"system/cpu/cpu1/power/autosuspend_delay_ms",""
+"system/cpu/cpu1/power/runtime_suspended_time","0"
+"system/cpu/cpu1/power/control","auto"
+"system/cpu/cpu1/online","1"
+"system/cpu/cpu1/topology/die_id","-1"
+"system/cpu/cpu1/topology/physical_package_id","0"
+"system/cpu/cpu1/topology/core_cpus_list","1"
+"system/cpu/cpu1/topology/die_cpus_list","1"
+"system/cpu/cpu1/topology/core_siblings","0f"
+"system/cpu/cpu1/topology/core_siblings_list","0-3"
+"system/cpu/cpu1/topology/package_cpus","0f"
+"system/cpu/cpu1/topology/package_cpus_list","0-3"
+"system/cpu/cpu1/topology/die_cpus","02"
+"system/cpu/cpu1/topology/thread_siblings_list","1"
+"system/cpu/cpu1/topology/core_id","1"
+"system/cpu/cpu1/topology/core_cpus","02"
+"system/cpu/cpu1/topology/thread_siblings","02"
+"system/cpu/cpu1/cpu_capacity","325"
+"system/cpu/cpu1/cache/uevent",""
+"system/cpu/cpu1/cache/index2/uevent",""
+"system/cpu/cpu1/cache/index2/shared_cpu_list","1"
+"system/cpu/cpu1/cache/index2/type","Unified"
+"system/cpu/cpu1/cache/index2/waiting_for_supplier","0"
+"system/cpu/cpu1/cache/index2/level","2"
+"system/cpu/cpu1/cache/index2/shared_cpu_map","02"
+"system/cpu/cpu1/cache/index0/uevent",""
+"system/cpu/cpu1/cache/index0/shared_cpu_list","1"
+"system/cpu/cpu1/cache/index0/type","Data"
+"system/cpu/cpu1/cache/index0/waiting_for_supplier","0"
+"system/cpu/cpu1/cache/index0/level","1"
+"system/cpu/cpu1/cache/index0/shared_cpu_map","02"
+"system/cpu/cpu1/cache/index3/uevent",""
+"system/cpu/cpu1/cache/index3/shared_cpu_list","0-7"
+"system/cpu/cpu1/cache/index3/type","Unified"
+"system/cpu/cpu1/cache/index3/waiting_for_supplier","0"
+"system/cpu/cpu1/cache/index3/level","3"
+"system/cpu/cpu1/cache/index3/shared_cpu_map","ff"
+"system/cpu/cpu1/cache/index1/uevent",""
+"system/cpu/cpu1/cache/index1/shared_cpu_list","1"
+"system/cpu/cpu1/cache/index1/type","Instruction"
+"system/cpu/cpu1/cache/index1/waiting_for_supplier","0"
+"system/cpu/cpu1/cache/index1/level","1"
+"system/cpu/cpu1/cache/index1/shared_cpu_map","02"
+"system/cpu/cpu1/cache/waiting_for_supplier","0"
+"system/cpu/cpu1/isolate","0"
+"system/cpu/cpu1/waiting_for_supplier","0"
+"system/cpu/cpu1/regs/identification/revidr_el1","0x0000000000000000"
+"system/cpu/cpu1/regs/identification/midr_el1","0x00000000412fd050"
+"system/cpu/smt/control","notimplemented"
+"system/cpu/smt/active","0"
+"system/cpu/vulnerabilities/spectre_v2","Not affected"
+"system/cpu/vulnerabilities/itlb_multihit","Not affected"
+"system/cpu/vulnerabilities/mds","Not affected"
+"system/cpu/vulnerabilities/l1tf","Not affected"
+"system/cpu/vulnerabilities/spec_store_bypass","Mitigation: Speculative Store Bypass disabled via prctl"
+"system/cpu/vulnerabilities/tsx_async_abort","Not affected"
+"system/cpu/vulnerabilities/spectre_v1","Mitigation: __user pointer sanitization"
+"system/cpu/vulnerabilities/srbds","Not affected"
+"system/cpu/vulnerabilities/meltdown","Not affected"
+"system/cpu/cpufreq/policy4/scaling_min_freq","2419200"
+"system/cpu/cpufreq/policy4/scaling_available_governors","conservative powersave performance schedutil "
+"system/cpu/cpufreq/policy4/scaling_boost_frequencies",""
+"system/cpu/cpufreq/policy4/cpuinfo_max_freq","2419200"
+"system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us","0"
+"system/cpu/cpufreq/policy4/schedutil/pl","1"
+"system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq","0"
+"system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us","0"
+"system/cpu/cpufreq/policy4/schedutil/target_loads","80 1996800:95"
+"system/cpu/cpufreq/policy4/schedutil/hispeed_load","90"
+"system/cpu/cpufreq/policy4/schedutil/hispeed_freq","1555200"
+"system/cpu/cpufreq/policy4/scaling_available_frequencies","710400 844800 960000 1075200 1209600 1324800 1440000 1555200 1670400 1766400 1881600 1996800 2112000 2227200 2342400 2419200 "
+"system/cpu/cpufreq/policy4/related_cpus","4 5 6"
+"system/cpu/cpufreq/policy4/scaling_cur_freq","2419200"
+"system/cpu/cpufreq/policy4/scaling_setspeed","<unsupported>"
+"system/cpu/cpufreq/policy4/freq_change_info","policy->org_max=0,policy->change_comm="
+"system/cpu/cpufreq/policy4/stats/trans_table","   From  :    To
          :    710400    844800    960000   1075200   1209600   1324800   1440000   1555200   1670400   1766400   1881600   1996800   2112000   2227200   2342400   2419200 
    710400:    144624     23203     21256     11908     16268      5614      3504     16788      2061      1566      1499      2445      3442       726       626     25727 
    844800:     21878     41348      4062      2375      2467      1361       932      3987       539       325       294       407       390        74        63      2167 
@@ -591,8 +591,8 @@ MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,
   2227200:      1844       185       209       276       336       285       298       442       396       443       719      1802      4902     38637      2840     23346 
   2342400:      1409       174       174       323       282       235       271       305       340       356       528       954      3370      2301     34675     23525 
   2419200:     27929      2463      2266      2491      2822      2076      2048      2484      2580      2475      3338      5824     46569     22997     22098    154899 "
-"system/cpu/cpufreq/policy4/stats/total_trans"	"1716752"
-"system/cpu/cpufreq/policy4/stats/time_in_state"	"710400 1958673
+"system/cpu/cpufreq/policy4/stats/total_trans","1716752"
+"system/cpu/cpufreq/policy4/stats/time_in_state","710400 1958673
 844800 15718
 960000 15632
 1075200 39171
@@ -608,28 +608,28 @@ MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,
 2227200 8055
 2342400 5575
 2419200 212008"
-"system/cpu/cpufreq/policy4/affected_cpus"	"4 5 6"
-"system/cpu/cpufreq/policy4/scaling_max_freq"	"2419200"
-"system/cpu/cpufreq/policy4/cpuinfo_transition_latency"	"0"
-"system/cpu/cpufreq/policy4/scaling_driver"	"qcom-cpufreq-hw"
-"system/cpu/cpufreq/policy4/cpuinfo_min_freq"	"710400"
-"system/cpu/cpufreq/policy0/scaling_min_freq"	"1804800"
-"system/cpu/cpufreq/policy0/scaling_available_governors"	"conservative powersave performance schedutil "
-"system/cpu/cpufreq/policy0/scaling_boost_frequencies"	""
-"system/cpu/cpufreq/policy0/cpuinfo_max_freq"	"1804800"
-"system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us"	"0"
-"system/cpu/cpufreq/policy0/schedutil/pl"	"1"
-"system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq"	"1000000"
-"system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us"	"0"
-"system/cpu/cpufreq/policy0/schedutil/target_loads"	"80"
-"system/cpu/cpufreq/policy0/schedutil/hispeed_load"	"90"
-"system/cpu/cpufreq/policy0/schedutil/hispeed_freq"	"1209600"
-"system/cpu/cpufreq/policy0/scaling_available_frequencies"	"300000 403200 499200 595200 691200 806400 902400 998400 1094400 1209600 1305600 1401600 1497600 1612800 1708800 1804800 "
-"system/cpu/cpufreq/policy0/related_cpus"	"0 1 2 3"
-"system/cpu/cpufreq/policy0/scaling_cur_freq"	"1804800"
-"system/cpu/cpufreq/policy0/scaling_setspeed"	"<unsupported>"
-"system/cpu/cpufreq/policy0/freq_change_info"	"policy->org_max=0,policy->change_comm="
-"system/cpu/cpufreq/policy0/stats/trans_table"	"   From  :    To
+"system/cpu/cpufreq/policy4/affected_cpus","4 5 6"
+"system/cpu/cpufreq/policy4/scaling_max_freq","2419200"
+"system/cpu/cpufreq/policy4/cpuinfo_transition_latency","0"
+"system/cpu/cpufreq/policy4/scaling_driver","qcom-cpufreq-hw"
+"system/cpu/cpufreq/policy4/cpuinfo_min_freq","710400"
+"system/cpu/cpufreq/policy0/scaling_min_freq","1804800"
+"system/cpu/cpufreq/policy0/scaling_available_governors","conservative powersave performance schedutil "
+"system/cpu/cpufreq/policy0/scaling_boost_frequencies",""
+"system/cpu/cpufreq/policy0/cpuinfo_max_freq","1804800"
+"system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us","0"
+"system/cpu/cpufreq/policy0/schedutil/pl","1"
+"system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq","1000000"
+"system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us","0"
+"system/cpu/cpufreq/policy0/schedutil/target_loads","80"
+"system/cpu/cpufreq/policy0/schedutil/hispeed_load","90"
+"system/cpu/cpufreq/policy0/schedutil/hispeed_freq","1209600"
+"system/cpu/cpufreq/policy0/scaling_available_frequencies","300000 403200 499200 595200 691200 806400 902400 998400 1094400 1209600 1305600 1401600 1497600 1612800 1708800 1804800 "
+"system/cpu/cpufreq/policy0/related_cpus","0 1 2 3"
+"system/cpu/cpufreq/policy0/scaling_cur_freq","1804800"
+"system/cpu/cpufreq/policy0/scaling_setspeed","<unsupported>"
+"system/cpu/cpufreq/policy0/freq_change_info","policy->org_max=0,policy->change_comm="
+"system/cpu/cpufreq/policy0/stats/trans_table","   From  :    To
          :    300000    403200    499200    595200    691200    806400    902400    998400   1094400   1209600   1305600   1401600   1497600   1612800   1708800   1804800 
    300000:         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0 
    403200:         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0 
@@ -647,8 +647,8 @@ MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,
   1612800:         0         0         0         0      2858       531       464       447      3965      1604      2927      1978      2582     41098      4066     19071 
   1708800:         0         0         0         0      1765       317       259       301      2603      1001      1633      1258      1700      2410     30735     16691 
   1804800:         0         0         0         0     24883      2850      2211      2139     27560      7111     10902      7644      8718     11691     12310    127058 "
-"system/cpu/cpufreq/policy0/stats/total_trans"	"1660221"
-"system/cpu/cpufreq/policy0/stats/time_in_state"	"300000 0
+"system/cpu/cpufreq/policy0/stats/total_trans","1660221"
+"system/cpu/cpufreq/policy0/stats/time_in_state","300000 0
 403200 0
 499200 0
 595200 0
@@ -664,28 +664,28 @@ MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,
 1612800 23620
 1708800 22365
 1804800 403240"
-"system/cpu/cpufreq/policy0/affected_cpus"	"0 1 2 3"
-"system/cpu/cpufreq/policy0/scaling_max_freq"	"1804800"
-"system/cpu/cpufreq/policy0/cpuinfo_transition_latency"	"0"
-"system/cpu/cpufreq/policy0/scaling_driver"	"qcom-cpufreq-hw"
-"system/cpu/cpufreq/policy0/cpuinfo_min_freq"	"300000"
-"system/cpu/cpufreq/policy7/scaling_min_freq"	"2841600"
-"system/cpu/cpufreq/policy7/scaling_available_governors"	"conservative powersave performance schedutil "
-"system/cpu/cpufreq/policy7/scaling_boost_frequencies"	""
-"system/cpu/cpufreq/policy7/cpuinfo_max_freq"	"2841600"
-"system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us"	"0"
-"system/cpu/cpufreq/policy7/schedutil/pl"	"0"
-"system/cpu/cpufreq/policy7/schedutil/rtg_boost_freq"	"0"
-"system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us"	"0"
-"system/cpu/cpufreq/policy7/schedutil/target_loads"	"80 2380800:95"
-"system/cpu/cpufreq/policy7/schedutil/hispeed_load"	"90"
-"system/cpu/cpufreq/policy7/schedutil/hispeed_freq"	"1420800"
-"system/cpu/cpufreq/policy7/scaling_available_frequencies"	"844800 960000 1075200 1190400 1305600 1420800 1555200 1670400 1785600 1900800 2035200 2150400 2265600 2380800 2496000 2592000 2688000 2764800 2841600 "
-"system/cpu/cpufreq/policy7/related_cpus"	"7"
-"system/cpu/cpufreq/policy7/scaling_cur_freq"	"2841600"
-"system/cpu/cpufreq/policy7/scaling_setspeed"	"<unsupported>"
-"system/cpu/cpufreq/policy7/freq_change_info"	"policy->org_max=0,policy->change_comm="
-"system/cpu/cpufreq/policy7/stats/trans_table"	"   From  :    To
+"system/cpu/cpufreq/policy0/affected_cpus","0 1 2 3"
+"system/cpu/cpufreq/policy0/scaling_max_freq","1804800"
+"system/cpu/cpufreq/policy0/cpuinfo_transition_latency","0"
+"system/cpu/cpufreq/policy0/scaling_driver","qcom-cpufreq-hw"
+"system/cpu/cpufreq/policy0/cpuinfo_min_freq","300000"
+"system/cpu/cpufreq/policy7/scaling_min_freq","2841600"
+"system/cpu/cpufreq/policy7/scaling_available_governors","conservative powersave performance schedutil "
+"system/cpu/cpufreq/policy7/scaling_boost_frequencies",""
+"system/cpu/cpufreq/policy7/cpuinfo_max_freq","2841600"
+"system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us","0"
+"system/cpu/cpufreq/policy7/schedutil/pl","0"
+"system/cpu/cpufreq/policy7/schedutil/rtg_boost_freq","0"
+"system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us","0"
+"system/cpu/cpufreq/policy7/schedutil/target_loads","80 2380800:95"
+"system/cpu/cpufreq/policy7/schedutil/hispeed_load","90"
+"system/cpu/cpufreq/policy7/schedutil/hispeed_freq","1420800"
+"system/cpu/cpufreq/policy7/scaling_available_frequencies","844800 960000 1075200 1190400 1305600 1420800 1555200 1670400 1785600 1900800 2035200 2150400 2265600 2380800 2496000 2592000 2688000 2764800 2841600 "
+"system/cpu/cpufreq/policy7/related_cpus","7"
+"system/cpu/cpufreq/policy7/scaling_cur_freq","2841600"
+"system/cpu/cpufreq/policy7/scaling_setspeed","<unsupported>"
+"system/cpu/cpufreq/policy7/freq_change_info","policy->org_max=0,policy->change_comm="
+"system/cpu/cpufreq/policy7/stats/trans_table","   From  :    To
          :    844800    960000   1075200   1190400   1305600   1420800   1555200   1670400   1785600   1900800   2035200   2150400   2265600   2380800   2496000   2592000   2688000   2764800   2841600 
    844800:     79213      5326      4363      4318      2641      2487      2438      4099      2201      2520      3642      3316      3544      3388      2292      1379      1188      3265     22835 
    960000:      7244     12970      1233       606       423       357       275       307       215       252       239       156       204       272        71        68        80       196       771 
@@ -706,8 +706,8 @@ MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,
   2688000:       745        92       100       104       168       195       302       300       327       291       356       358       400       548       534       499     15359      3890      6130 
   2764800:      2264       306       292       677       994      1364      2416      2869      3416      4439      6933      6459      6437      5821      6203      4742      3560     64147      4952 
   2841600:     16000      1914      1485      1737      1974      2292      3595      4350      4890      6308      9379      9138      9498     10554     10009      7690      6198      4844    113307 "
-"system/cpu/cpufreq/policy7/stats/total_trans"	"1188544"
-"system/cpu/cpufreq/policy7/stats/time_in_state"	"844800 2125872
+"system/cpu/cpufreq/policy7/stats/total_trans","1188544"
+"system/cpu/cpufreq/policy7/stats/time_in_state","844800 2125872
 960000 2095
 1075200 73071
 1190400 1584
@@ -726,308 +726,308 @@ MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,
 2688000 963
 2764800 28014
 2841600 176354"
-"system/cpu/cpufreq/policy7/affected_cpus"	"7"
-"system/cpu/cpufreq/policy7/scaling_max_freq"	"2841600"
-"system/cpu/cpufreq/policy7/cpuinfo_transition_latency"	"0"
-"system/cpu/cpufreq/policy7/scaling_driver"	"qcom-cpufreq-hw"
-"system/cpu/cpufreq/policy7/cpuinfo_min_freq"	"844800"
-"system/cpu/cpu6/cpuidle/state1/disable"	"0"
-"system/cpu/cpu6/cpuidle/state1/above"	"0"
-"system/cpu/cpu6/cpuidle/state1/time"	"18108447241"
-"system/cpu/cpu6/cpuidle/state1/power"	"0"
-"system/cpu/cpu6/cpuidle/state1/residency"	"0"
-"system/cpu/cpu6/cpuidle/state1/latency"	"1061"
-"system/cpu/cpu6/cpuidle/state1/usage"	"329262"
-"system/cpu/cpu6/cpuidle/state1/desc"	"rail-pc"
-"system/cpu/cpu6/cpuidle/state1/below"	"0"
-"system/cpu/cpu6/cpuidle/state1/name"	"C1"
-"system/cpu/cpu6/cpuidle/state1/s2idle/time"	"0"
-"system/cpu/cpu6/cpuidle/state1/s2idle/usage"	"0"
-"system/cpu/cpu6/cpuidle/driver/name"	"msm_idle"
-"system/cpu/cpu6/cpuidle/state0/disable"	"0"
-"system/cpu/cpu6/cpuidle/state0/above"	"0"
-"system/cpu/cpu6/cpuidle/state0/time"	"3826881428"
-"system/cpu/cpu6/cpuidle/state0/power"	"0"
-"system/cpu/cpu6/cpuidle/state0/residency"	"0"
-"system/cpu/cpu6/cpuidle/state0/latency"	"43"
-"system/cpu/cpu6/cpuidle/state0/usage"	"2793383"
-"system/cpu/cpu6/cpuidle/state0/desc"	"wfi"
-"system/cpu/cpu6/cpuidle/state0/below"	"2054377"
-"system/cpu/cpu6/cpuidle/state0/name"	"C0"
-"system/cpu/cpu6/uevent"	"OF_NAME=cpu
+"system/cpu/cpufreq/policy7/affected_cpus","7"
+"system/cpu/cpufreq/policy7/scaling_max_freq","2841600"
+"system/cpu/cpufreq/policy7/cpuinfo_transition_latency","0"
+"system/cpu/cpufreq/policy7/scaling_driver","qcom-cpufreq-hw"
+"system/cpu/cpufreq/policy7/cpuinfo_min_freq","844800"
+"system/cpu/cpu6/cpuidle/state1/disable","0"
+"system/cpu/cpu6/cpuidle/state1/above","0"
+"system/cpu/cpu6/cpuidle/state1/time","18108447241"
+"system/cpu/cpu6/cpuidle/state1/power","0"
+"system/cpu/cpu6/cpuidle/state1/residency","0"
+"system/cpu/cpu6/cpuidle/state1/latency","1061"
+"system/cpu/cpu6/cpuidle/state1/usage","329262"
+"system/cpu/cpu6/cpuidle/state1/desc","rail-pc"
+"system/cpu/cpu6/cpuidle/state1/below","0"
+"system/cpu/cpu6/cpuidle/state1/name","C1"
+"system/cpu/cpu6/cpuidle/state1/s2idle/time","0"
+"system/cpu/cpu6/cpuidle/state1/s2idle/usage","0"
+"system/cpu/cpu6/cpuidle/driver/name","msm_idle"
+"system/cpu/cpu6/cpuidle/state0/disable","0"
+"system/cpu/cpu6/cpuidle/state0/above","0"
+"system/cpu/cpu6/cpuidle/state0/time","3826881428"
+"system/cpu/cpu6/cpuidle/state0/power","0"
+"system/cpu/cpu6/cpuidle/state0/residency","0"
+"system/cpu/cpu6/cpuidle/state0/latency","43"
+"system/cpu/cpu6/cpuidle/state0/usage","2793383"
+"system/cpu/cpu6/cpuidle/state0/desc","wfi"
+"system/cpu/cpu6/cpuidle/state0/below","2054377"
+"system/cpu/cpu6/cpuidle/state0/name","C0"
+"system/cpu/cpu6/uevent","OF_NAME=cpu
 OF_FULLNAME=/cpus/cpu@600
 OF_TYPE=cpu
 OF_COMPATIBLE_0=qcom,kryo
 OF_COMPATIBLE_N=1
 MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
-"system/cpu/cpu6/hotplug/target"	"211"
-"system/cpu/cpu6/hotplug/state"	"211"
-"system/cpu/cpu6/hotplug/fail"	"-1"
-"system/cpu/cpu6/sched_load_boost"	"0"
-"system/cpu/cpu6/power/runtime_active_time"	"0"
-"system/cpu/cpu6/power/pm_qos_resume_latency_us"	"0"
-"system/cpu/cpu6/power/runtime_status"	"unsupported"
-"system/cpu/cpu6/power/autosuspend_delay_ms"	""
-"system/cpu/cpu6/power/runtime_suspended_time"	"0"
-"system/cpu/cpu6/power/control"	"auto"
-"system/cpu/cpu6/online"	"1"
-"system/cpu/cpu6/topology/die_id"	"-1"
-"system/cpu/cpu6/topology/physical_package_id"	"1"
-"system/cpu/cpu6/topology/core_cpus_list"	"6"
-"system/cpu/cpu6/topology/die_cpus_list"	"6"
-"system/cpu/cpu6/topology/core_siblings"	"70"
-"system/cpu/cpu6/topology/core_siblings_list"	"4-6"
-"system/cpu/cpu6/topology/package_cpus"	"70"
-"system/cpu/cpu6/topology/package_cpus_list"	"4-6"
-"system/cpu/cpu6/topology/die_cpus"	"40"
-"system/cpu/cpu6/topology/thread_siblings_list"	"6"
-"system/cpu/cpu6/topology/core_id"	"2"
-"system/cpu/cpu6/topology/core_cpus"	"40"
-"system/cpu/cpu6/topology/thread_siblings"	"40"
-"system/cpu/cpu6/cpu_capacity"	"828"
-"system/cpu/cpu6/cache/uevent"	""
-"system/cpu/cpu6/cache/index2/uevent"	""
-"system/cpu/cpu6/cache/index2/shared_cpu_list"	"6"
-"system/cpu/cpu6/cache/index2/type"	"Unified"
-"system/cpu/cpu6/cache/index2/waiting_for_supplier"	"0"
-"system/cpu/cpu6/cache/index2/level"	"2"
-"system/cpu/cpu6/cache/index2/shared_cpu_map"	"40"
-"system/cpu/cpu6/cache/index0/uevent"	""
-"system/cpu/cpu6/cache/index0/shared_cpu_list"	"6"
-"system/cpu/cpu6/cache/index0/type"	"Data"
-"system/cpu/cpu6/cache/index0/waiting_for_supplier"	"0"
-"system/cpu/cpu6/cache/index0/level"	"1"
-"system/cpu/cpu6/cache/index0/shared_cpu_map"	"40"
-"system/cpu/cpu6/cache/index3/uevent"	""
-"system/cpu/cpu6/cache/index3/shared_cpu_list"	"0-7"
-"system/cpu/cpu6/cache/index3/type"	"Unified"
-"system/cpu/cpu6/cache/index3/waiting_for_supplier"	"0"
-"system/cpu/cpu6/cache/index3/level"	"3"
-"system/cpu/cpu6/cache/index3/shared_cpu_map"	"ff"
-"system/cpu/cpu6/cache/index1/uevent"	""
-"system/cpu/cpu6/cache/index1/shared_cpu_list"	"6"
-"system/cpu/cpu6/cache/index1/type"	"Instruction"
-"system/cpu/cpu6/cache/index1/waiting_for_supplier"	"0"
-"system/cpu/cpu6/cache/index1/level"	"1"
-"system/cpu/cpu6/cache/index1/shared_cpu_map"	"40"
-"system/cpu/cpu6/cache/waiting_for_supplier"	"0"
-"system/cpu/cpu6/isolate"	"0"
-"system/cpu/cpu6/waiting_for_supplier"	"0"
-"system/cpu/cpu6/regs/identification/revidr_el1"	"0x0000000000000001"
-"system/cpu/cpu6/regs/identification/midr_el1"	"0x00000000411fd410"
-"system/cpu/waiting_for_supplier"	"0"
-"system/cpu/cpu4/cpuidle/state1/disable"	"0"
-"system/cpu/cpu4/cpuidle/state1/above"	"0"
-"system/cpu/cpu4/cpuidle/state1/time"	"18669132341"
-"system/cpu/cpu4/cpuidle/state1/power"	"0"
-"system/cpu/cpu4/cpuidle/state1/residency"	"0"
-"system/cpu/cpu4/cpuidle/state1/latency"	"1061"
-"system/cpu/cpu4/cpuidle/state1/usage"	"280353"
-"system/cpu/cpu4/cpuidle/state1/desc"	"rail-pc"
-"system/cpu/cpu4/cpuidle/state1/below"	"0"
-"system/cpu/cpu4/cpuidle/state1/name"	"C1"
-"system/cpu/cpu4/cpuidle/state1/s2idle/time"	"0"
-"system/cpu/cpu4/cpuidle/state1/s2idle/usage"	"0"
-"system/cpu/cpu4/cpuidle/driver/name"	"msm_idle"
-"system/cpu/cpu4/cpuidle/state0/disable"	"0"
-"system/cpu/cpu4/cpuidle/state0/above"	"0"
-"system/cpu/cpu4/cpuidle/state0/time"	"3511282624"
-"system/cpu/cpu4/cpuidle/state0/power"	"0"
-"system/cpu/cpu4/cpuidle/state0/residency"	"0"
-"system/cpu/cpu4/cpuidle/state0/latency"	"43"
-"system/cpu/cpu4/cpuidle/state0/usage"	"2603607"
-"system/cpu/cpu4/cpuidle/state0/desc"	"wfi"
-"system/cpu/cpu4/cpuidle/state0/below"	"1932801"
-"system/cpu/cpu4/cpuidle/state0/name"	"C0"
-"system/cpu/cpu4/uevent"	"OF_NAME=cpu
+"system/cpu/cpu6/hotplug/target","211"
+"system/cpu/cpu6/hotplug/state","211"
+"system/cpu/cpu6/hotplug/fail","-1"
+"system/cpu/cpu6/sched_load_boost","0"
+"system/cpu/cpu6/power/runtime_active_time","0"
+"system/cpu/cpu6/power/pm_qos_resume_latency_us","0"
+"system/cpu/cpu6/power/runtime_status","unsupported"
+"system/cpu/cpu6/power/autosuspend_delay_ms",""
+"system/cpu/cpu6/power/runtime_suspended_time","0"
+"system/cpu/cpu6/power/control","auto"
+"system/cpu/cpu6/online","1"
+"system/cpu/cpu6/topology/die_id","-1"
+"system/cpu/cpu6/topology/physical_package_id","1"
+"system/cpu/cpu6/topology/core_cpus_list","6"
+"system/cpu/cpu6/topology/die_cpus_list","6"
+"system/cpu/cpu6/topology/core_siblings","70"
+"system/cpu/cpu6/topology/core_siblings_list","4-6"
+"system/cpu/cpu6/topology/package_cpus","70"
+"system/cpu/cpu6/topology/package_cpus_list","4-6"
+"system/cpu/cpu6/topology/die_cpus","40"
+"system/cpu/cpu6/topology/thread_siblings_list","6"
+"system/cpu/cpu6/topology/core_id","2"
+"system/cpu/cpu6/topology/core_cpus","40"
+"system/cpu/cpu6/topology/thread_siblings","40"
+"system/cpu/cpu6/cpu_capacity","828"
+"system/cpu/cpu6/cache/uevent",""
+"system/cpu/cpu6/cache/index2/uevent",""
+"system/cpu/cpu6/cache/index2/shared_cpu_list","6"
+"system/cpu/cpu6/cache/index2/type","Unified"
+"system/cpu/cpu6/cache/index2/waiting_for_supplier","0"
+"system/cpu/cpu6/cache/index2/level","2"
+"system/cpu/cpu6/cache/index2/shared_cpu_map","40"
+"system/cpu/cpu6/cache/index0/uevent",""
+"system/cpu/cpu6/cache/index0/shared_cpu_list","6"
+"system/cpu/cpu6/cache/index0/type","Data"
+"system/cpu/cpu6/cache/index0/waiting_for_supplier","0"
+"system/cpu/cpu6/cache/index0/level","1"
+"system/cpu/cpu6/cache/index0/shared_cpu_map","40"
+"system/cpu/cpu6/cache/index3/uevent",""
+"system/cpu/cpu6/cache/index3/shared_cpu_list","0-7"
+"system/cpu/cpu6/cache/index3/type","Unified"
+"system/cpu/cpu6/cache/index3/waiting_for_supplier","0"
+"system/cpu/cpu6/cache/index3/level","3"
+"system/cpu/cpu6/cache/index3/shared_cpu_map","ff"
+"system/cpu/cpu6/cache/index1/uevent",""
+"system/cpu/cpu6/cache/index1/shared_cpu_list","6"
+"system/cpu/cpu6/cache/index1/type","Instruction"
+"system/cpu/cpu6/cache/index1/waiting_for_supplier","0"
+"system/cpu/cpu6/cache/index1/level","1"
+"system/cpu/cpu6/cache/index1/shared_cpu_map","40"
+"system/cpu/cpu6/cache/waiting_for_supplier","0"
+"system/cpu/cpu6/isolate","0"
+"system/cpu/cpu6/waiting_for_supplier","0"
+"system/cpu/cpu6/regs/identification/revidr_el1","0x0000000000000001"
+"system/cpu/cpu6/regs/identification/midr_el1","0x00000000411fd410"
+"system/cpu/waiting_for_supplier","0"
+"system/cpu/cpu4/cpuidle/state1/disable","0"
+"system/cpu/cpu4/cpuidle/state1/above","0"
+"system/cpu/cpu4/cpuidle/state1/time","18669132341"
+"system/cpu/cpu4/cpuidle/state1/power","0"
+"system/cpu/cpu4/cpuidle/state1/residency","0"
+"system/cpu/cpu4/cpuidle/state1/latency","1061"
+"system/cpu/cpu4/cpuidle/state1/usage","280353"
+"system/cpu/cpu4/cpuidle/state1/desc","rail-pc"
+"system/cpu/cpu4/cpuidle/state1/below","0"
+"system/cpu/cpu4/cpuidle/state1/name","C1"
+"system/cpu/cpu4/cpuidle/state1/s2idle/time","0"
+"system/cpu/cpu4/cpuidle/state1/s2idle/usage","0"
+"system/cpu/cpu4/cpuidle/driver/name","msm_idle"
+"system/cpu/cpu4/cpuidle/state0/disable","0"
+"system/cpu/cpu4/cpuidle/state0/above","0"
+"system/cpu/cpu4/cpuidle/state0/time","3511282624"
+"system/cpu/cpu4/cpuidle/state0/power","0"
+"system/cpu/cpu4/cpuidle/state0/residency","0"
+"system/cpu/cpu4/cpuidle/state0/latency","43"
+"system/cpu/cpu4/cpuidle/state0/usage","2603607"
+"system/cpu/cpu4/cpuidle/state0/desc","wfi"
+"system/cpu/cpu4/cpuidle/state0/below","1932801"
+"system/cpu/cpu4/cpuidle/state0/name","C0"
+"system/cpu/cpu4/uevent","OF_NAME=cpu
 OF_FULLNAME=/cpus/cpu@400
 OF_TYPE=cpu
 OF_COMPATIBLE_0=qcom,kryo
 OF_COMPATIBLE_N=1
 MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
-"system/cpu/cpu4/hotplug/target"	"211"
-"system/cpu/cpu4/hotplug/state"	"211"
-"system/cpu/cpu4/hotplug/fail"	"-1"
-"system/cpu/cpu4/sched_load_boost"	"0"
-"system/cpu/cpu4/power/runtime_active_time"	"0"
-"system/cpu/cpu4/power/pm_qos_resume_latency_us"	"0"
-"system/cpu/cpu4/power/runtime_status"	"unsupported"
-"system/cpu/cpu4/power/autosuspend_delay_ms"	""
-"system/cpu/cpu4/power/runtime_suspended_time"	"0"
-"system/cpu/cpu4/power/control"	"auto"
-"system/cpu/cpu4/core_ctl/task_thres"	"3"
-"system/cpu/cpu4/core_ctl/max_cpus"	"3"
-"system/cpu/cpu4/core_ctl/need_cpus"	"3"
-"system/cpu/cpu4/core_ctl/offline_delay_ms"	"100"
-"system/cpu/cpu4/core_ctl/active_cpus"	"3"
-"system/cpu/cpu4/core_ctl/busy_down_thres"	"30 30 30 "
-"system/cpu/cpu4/core_ctl/nr_prev_assist_thresh"	"4294967295"
-"system/cpu/cpu4/core_ctl/not_preferred"	"CPU#4: 0
+"system/cpu/cpu4/hotplug/target","211"
+"system/cpu/cpu4/hotplug/state","211"
+"system/cpu/cpu4/hotplug/fail","-1"
+"system/cpu/cpu4/sched_load_boost","0"
+"system/cpu/cpu4/power/runtime_active_time","0"
+"system/cpu/cpu4/power/pm_qos_resume_latency_us","0"
+"system/cpu/cpu4/power/runtime_status","unsupported"
+"system/cpu/cpu4/power/autosuspend_delay_ms",""
+"system/cpu/cpu4/power/runtime_suspended_time","0"
+"system/cpu/cpu4/power/control","auto"
+"system/cpu/cpu4/core_ctl/task_thres","3"
+"system/cpu/cpu4/core_ctl/max_cpus","3"
+"system/cpu/cpu4/core_ctl/need_cpus","3"
+"system/cpu/cpu4/core_ctl/offline_delay_ms","100"
+"system/cpu/cpu4/core_ctl/active_cpus","3"
+"system/cpu/cpu4/core_ctl/busy_down_thres","30 30 30 "
+"system/cpu/cpu4/core_ctl/nr_prev_assist_thresh","4294967295"
+"system/cpu/cpu4/core_ctl/not_preferred","CPU#4: 0
 CPU#5: 0
 CPU#6: 0"
-"system/cpu/cpu4/core_ctl/global_state"	"CPU0
-	CPU: 0
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 7
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 1
-	OPBoost: 0
+"system/cpu/cpu4/core_ctl/global_state","CPU0
+,CPU: 0
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 7
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 1
+,OPBoost: 0
 CPU1
-	CPU: 1
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 11
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 1
-	OPBoost: 0
+,CPU: 1
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 11
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 1
+,OPBoost: 0
 CPU2
-	CPU: 2
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 6
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 1
-	OPBoost: 0
+,CPU: 2
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 6
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 1
+,OPBoost: 0
 CPU3
-	CPU: 3
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 9
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 1
-	OPBoost: 0
+,CPU: 3
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 9
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 1
+,OPBoost: 0
 CPU4
-	CPU: 4
-	Online: 1
-	Isolated: 0
-	First CPU: 4
-	Busy%: 41
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 3
-	Need CPUs: 3
-	Nr isolated CPUs: 0
-	Boost: 1
-	OPBoost: 0
+,CPU: 4
+,Online: 1
+,Isolated: 0
+,First CPU: 4
+,Busy%: 41
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 3
+,Need CPUs: 3
+,Nr isolated CPUs: 0
+,Boost: 1
+,OPBoost: 0
 CPU5
-	CPU: 5
-	Online: 1
-	Isolated: 0
-	First CPU: 4
-	Busy%: 63
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 3
-	Need CPUs: 3
-	Nr isolated CPUs: 0
-	Boost: 1
-	OPBoost: 0
+,CPU: 5
+,Online: 1
+,Isolated: 0
+,First CPU: 4
+,Busy%: 63
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 3
+,Need CPUs: 3
+,Nr isolated CPUs: 0
+,Boost: 1
+,OPBoost: 0
 CPU6
-	CPU: 6
-	Online: 1
-	Isolated: 0
-	First CPU: 4
-	Busy%: 99
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 3
-	Need CPUs: 3
-	Nr isolated CPUs: 0
-	Boost: 1
-	OPBoost: 0
+,CPU: 6
+,Online: 1
+,Isolated: 0
+,First CPU: 4
+,Busy%: 99
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 3
+,Need CPUs: 3
+,Nr isolated CPUs: 0
+,Boost: 1
+,OPBoost: 0
 CPU7
-	CPU: 7
-	Online: 1
-	Isolated: 0
-	First CPU: 7
-	Busy%: 51
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 1
-	Need CPUs: 1
-	Nr isolated CPUs: 0
-	Boost: 1
-	OPBoost: 0"
-"system/cpu/cpu4/core_ctl/min_cpus"	"2"
-"system/cpu/cpu4/core_ctl/busy_up_thres"	"60 60 60 "
-"system/cpu/cpu4/core_ctl/enable"	"1"
-"system/cpu/cpu4/online"	"1"
-"system/cpu/cpu4/topology/die_id"	"-1"
-"system/cpu/cpu4/topology/physical_package_id"	"1"
-"system/cpu/cpu4/topology/core_cpus_list"	"4"
-"system/cpu/cpu4/topology/die_cpus_list"	"4"
-"system/cpu/cpu4/topology/core_siblings"	"70"
-"system/cpu/cpu4/topology/core_siblings_list"	"4-6"
-"system/cpu/cpu4/topology/package_cpus"	"70"
-"system/cpu/cpu4/topology/package_cpus_list"	"4-6"
-"system/cpu/cpu4/topology/die_cpus"	"10"
-"system/cpu/cpu4/topology/thread_siblings_list"	"4"
-"system/cpu/cpu4/topology/core_id"	"0"
-"system/cpu/cpu4/topology/core_cpus"	"10"
-"system/cpu/cpu4/topology/thread_siblings"	"10"
-"system/cpu/cpu4/cpu_capacity"	"828"
-"system/cpu/cpu4/dcvsh_freq_limit"	"2419200"
-"system/cpu/cpu4/cache/uevent"	""
-"system/cpu/cpu4/cache/index2/uevent"	""
-"system/cpu/cpu4/cache/index2/shared_cpu_list"	"4"
-"system/cpu/cpu4/cache/index2/type"	"Unified"
-"system/cpu/cpu4/cache/index2/waiting_for_supplier"	"0"
-"system/cpu/cpu4/cache/index2/level"	"2"
-"system/cpu/cpu4/cache/index2/shared_cpu_map"	"10"
-"system/cpu/cpu4/cache/index0/uevent"	""
-"system/cpu/cpu4/cache/index0/shared_cpu_list"	"4"
-"system/cpu/cpu4/cache/index0/type"	"Data"
-"system/cpu/cpu4/cache/index0/waiting_for_supplier"	"0"
-"system/cpu/cpu4/cache/index0/level"	"1"
-"system/cpu/cpu4/cache/index0/shared_cpu_map"	"10"
-"system/cpu/cpu4/cache/index3/uevent"	""
-"system/cpu/cpu4/cache/index3/shared_cpu_list"	"0-7"
-"system/cpu/cpu4/cache/index3/type"	"Unified"
-"system/cpu/cpu4/cache/index3/waiting_for_supplier"	"0"
-"system/cpu/cpu4/cache/index3/level"	"3"
-"system/cpu/cpu4/cache/index3/shared_cpu_map"	"ff"
-"system/cpu/cpu4/cache/index1/uevent"	""
-"system/cpu/cpu4/cache/index1/shared_cpu_list"	"4"
-"system/cpu/cpu4/cache/index1/type"	"Instruction"
-"system/cpu/cpu4/cache/index1/waiting_for_supplier"	"0"
-"system/cpu/cpu4/cache/index1/level"	"1"
-"system/cpu/cpu4/cache/index1/shared_cpu_map"	"10"
-"system/cpu/cpu4/cache/waiting_for_supplier"	"0"
-"system/cpu/cpu4/isolate"	"0"
-"system/cpu/cpu4/waiting_for_supplier"	"0"
-"system/cpu/cpu4/regs/identification/revidr_el1"	"0x0000000000000001"
-"system/cpu/cpu4/regs/identification/midr_el1"	"0x00000000411fd410"
-"system/cpu/hyp_core_ctl/hcc_min_freq"	"0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0 "
-"system/cpu/hyp_core_ctl/status"	"enabled=0
+,CPU: 7
+,Online: 1
+,Isolated: 0
+,First CPU: 7
+,Busy%: 51
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 1
+,Need CPUs: 1
+,Nr isolated CPUs: 0
+,Boost: 1
+,OPBoost: 0"
+"system/cpu/cpu4/core_ctl/min_cpus","2"
+"system/cpu/cpu4/core_ctl/busy_up_thres","60 60 60 "
+"system/cpu/cpu4/core_ctl/enable","1"
+"system/cpu/cpu4/online","1"
+"system/cpu/cpu4/topology/die_id","-1"
+"system/cpu/cpu4/topology/physical_package_id","1"
+"system/cpu/cpu4/topology/core_cpus_list","4"
+"system/cpu/cpu4/topology/die_cpus_list","4"
+"system/cpu/cpu4/topology/core_siblings","70"
+"system/cpu/cpu4/topology/core_siblings_list","4-6"
+"system/cpu/cpu4/topology/package_cpus","70"
+"system/cpu/cpu4/topology/package_cpus_list","4-6"
+"system/cpu/cpu4/topology/die_cpus","10"
+"system/cpu/cpu4/topology/thread_siblings_list","4"
+"system/cpu/cpu4/topology/core_id","0"
+"system/cpu/cpu4/topology/core_cpus","10"
+"system/cpu/cpu4/topology/thread_siblings","10"
+"system/cpu/cpu4/cpu_capacity","828"
+"system/cpu/cpu4/dcvsh_freq_limit","2419200"
+"system/cpu/cpu4/cache/uevent",""
+"system/cpu/cpu4/cache/index2/uevent",""
+"system/cpu/cpu4/cache/index2/shared_cpu_list","4"
+"system/cpu/cpu4/cache/index2/type","Unified"
+"system/cpu/cpu4/cache/index2/waiting_for_supplier","0"
+"system/cpu/cpu4/cache/index2/level","2"
+"system/cpu/cpu4/cache/index2/shared_cpu_map","10"
+"system/cpu/cpu4/cache/index0/uevent",""
+"system/cpu/cpu4/cache/index0/shared_cpu_list","4"
+"system/cpu/cpu4/cache/index0/type","Data"
+"system/cpu/cpu4/cache/index0/waiting_for_supplier","0"
+"system/cpu/cpu4/cache/index0/level","1"
+"system/cpu/cpu4/cache/index0/shared_cpu_map","10"
+"system/cpu/cpu4/cache/index3/uevent",""
+"system/cpu/cpu4/cache/index3/shared_cpu_list","0-7"
+"system/cpu/cpu4/cache/index3/type","Unified"
+"system/cpu/cpu4/cache/index3/waiting_for_supplier","0"
+"system/cpu/cpu4/cache/index3/level","3"
+"system/cpu/cpu4/cache/index3/shared_cpu_map","ff"
+"system/cpu/cpu4/cache/index1/uevent",""
+"system/cpu/cpu4/cache/index1/shared_cpu_list","4"
+"system/cpu/cpu4/cache/index1/type","Instruction"
+"system/cpu/cpu4/cache/index1/waiting_for_supplier","0"
+"system/cpu/cpu4/cache/index1/level","1"
+"system/cpu/cpu4/cache/index1/shared_cpu_map","10"
+"system/cpu/cpu4/cache/waiting_for_supplier","0"
+"system/cpu/cpu4/isolate","0"
+"system/cpu/cpu4/waiting_for_supplier","0"
+"system/cpu/cpu4/regs/identification/revidr_el1","0x0000000000000001"
+"system/cpu/cpu4/regs/identification/midr_el1","0x00000000411fd410"
+"system/cpu/hyp_core_ctl/hcc_min_freq","0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0 "
+"system/cpu/hyp_core_ctl/status","enabled=0
 reserve_cpus=
 reserved_cpus=
 our_isolated_cpus=
@@ -1035,305 +1035,305 @@ online_cpus=0-7
 isolated_cpus=
 thermal_cpus=
 Vcpu to Pcpu mappings:"
-"system/cpu/hyp_core_ctl/enable"	"0"
-"system/cpu/cpu_boost/sched_boost_on_input"	"0"
-"system/cpu/cpu_boost/input_boost_freq"	"0:1305600 1:0 2:0 3:0 4:0 5:0 6:0 7:0 "
-"system/cpu/cpu_boost/input_boost_ms"	"120"
-"system/cpu/isolated"	""
-"system/cpu/kernel_max"	"31"
-"system/cpu/cpu2/cpuidle/state1/disable"	"0"
-"system/cpu/cpu2/cpuidle/state1/above"	"0"
-"system/cpu/cpu2/cpuidle/state1/time"	"11016894538"
-"system/cpu/cpu2/cpuidle/state1/power"	"0"
-"system/cpu/cpu2/cpuidle/state1/residency"	"0"
-"system/cpu/cpu2/cpuidle/state1/latency"	"531"
-"system/cpu/cpu2/cpuidle/state1/usage"	"1182520"
-"system/cpu/cpu2/cpuidle/state1/desc"	"rail-pc"
-"system/cpu/cpu2/cpuidle/state1/below"	"0"
-"system/cpu/cpu2/cpuidle/state1/name"	"C1"
-"system/cpu/cpu2/cpuidle/state1/s2idle/time"	"0"
-"system/cpu/cpu2/cpuidle/state1/s2idle/usage"	"0"
-"system/cpu/cpu2/cpuidle/driver/name"	"msm_idle"
-"system/cpu/cpu2/cpuidle/state0/disable"	"0"
-"system/cpu/cpu2/cpuidle/state0/above"	"0"
-"system/cpu/cpu2/cpuidle/state0/time"	"8450477072"
-"system/cpu/cpu2/cpuidle/state0/power"	"0"
-"system/cpu/cpu2/cpuidle/state0/residency"	"0"
-"system/cpu/cpu2/cpuidle/state0/latency"	"43"
-"system/cpu/cpu2/cpuidle/state0/usage"	"8732767"
-"system/cpu/cpu2/cpuidle/state0/desc"	"wfi"
-"system/cpu/cpu2/cpuidle/state0/below"	"7290432"
-"system/cpu/cpu2/cpuidle/state0/name"	"C0"
-"system/cpu/cpu2/uevent"	"OF_NAME=cpu
+"system/cpu/hyp_core_ctl/enable","0"
+"system/cpu/cpu_boost/sched_boost_on_input","0"
+"system/cpu/cpu_boost/input_boost_freq","0:1305600 1:0 2:0 3:0 4:0 5:0 6:0 7:0 "
+"system/cpu/cpu_boost/input_boost_ms","120"
+"system/cpu/isolated",""
+"system/cpu/kernel_max","31"
+"system/cpu/cpu2/cpuidle/state1/disable","0"
+"system/cpu/cpu2/cpuidle/state1/above","0"
+"system/cpu/cpu2/cpuidle/state1/time","11016894538"
+"system/cpu/cpu2/cpuidle/state1/power","0"
+"system/cpu/cpu2/cpuidle/state1/residency","0"
+"system/cpu/cpu2/cpuidle/state1/latency","531"
+"system/cpu/cpu2/cpuidle/state1/usage","1182520"
+"system/cpu/cpu2/cpuidle/state1/desc","rail-pc"
+"system/cpu/cpu2/cpuidle/state1/below","0"
+"system/cpu/cpu2/cpuidle/state1/name","C1"
+"system/cpu/cpu2/cpuidle/state1/s2idle/time","0"
+"system/cpu/cpu2/cpuidle/state1/s2idle/usage","0"
+"system/cpu/cpu2/cpuidle/driver/name","msm_idle"
+"system/cpu/cpu2/cpuidle/state0/disable","0"
+"system/cpu/cpu2/cpuidle/state0/above","0"
+"system/cpu/cpu2/cpuidle/state0/time","8450477072"
+"system/cpu/cpu2/cpuidle/state0/power","0"
+"system/cpu/cpu2/cpuidle/state0/residency","0"
+"system/cpu/cpu2/cpuidle/state0/latency","43"
+"system/cpu/cpu2/cpuidle/state0/usage","8732767"
+"system/cpu/cpu2/cpuidle/state0/desc","wfi"
+"system/cpu/cpu2/cpuidle/state0/below","7290432"
+"system/cpu/cpu2/cpuidle/state0/name","C0"
+"system/cpu/cpu2/uevent","OF_NAME=cpu
 OF_FULLNAME=/cpus/cpu@200
 OF_TYPE=cpu
 OF_COMPATIBLE_0=qcom,kryo
 OF_COMPATIBLE_N=1
 MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
-"system/cpu/cpu2/hotplug/target"	"211"
-"system/cpu/cpu2/hotplug/state"	"211"
-"system/cpu/cpu2/hotplug/fail"	"-1"
-"system/cpu/cpu2/sched_load_boost"	"0"
-"system/cpu/cpu2/power/runtime_active_time"	"0"
-"system/cpu/cpu2/power/pm_qos_resume_latency_us"	"0"
-"system/cpu/cpu2/power/runtime_status"	"unsupported"
-"system/cpu/cpu2/power/autosuspend_delay_ms"	""
-"system/cpu/cpu2/power/runtime_suspended_time"	"0"
-"system/cpu/cpu2/power/control"	"auto"
-"system/cpu/cpu2/online"	"1"
-"system/cpu/cpu2/topology/die_id"	"-1"
-"system/cpu/cpu2/topology/physical_package_id"	"0"
-"system/cpu/cpu2/topology/core_cpus_list"	"2"
-"system/cpu/cpu2/topology/die_cpus_list"	"2"
-"system/cpu/cpu2/topology/core_siblings"	"0f"
-"system/cpu/cpu2/topology/core_siblings_list"	"0-3"
-"system/cpu/cpu2/topology/package_cpus"	"0f"
-"system/cpu/cpu2/topology/package_cpus_list"	"0-3"
-"system/cpu/cpu2/topology/die_cpus"	"04"
-"system/cpu/cpu2/topology/thread_siblings_list"	"2"
-"system/cpu/cpu2/topology/core_id"	"2"
-"system/cpu/cpu2/topology/core_cpus"	"04"
-"system/cpu/cpu2/topology/thread_siblings"	"04"
-"system/cpu/cpu2/cpu_capacity"	"325"
-"system/cpu/cpu2/cache/uevent"	""
-"system/cpu/cpu2/cache/index2/uevent"	""
-"system/cpu/cpu2/cache/index2/shared_cpu_list"	"2"
-"system/cpu/cpu2/cache/index2/type"	"Unified"
-"system/cpu/cpu2/cache/index2/waiting_for_supplier"	"0"
-"system/cpu/cpu2/cache/index2/level"	"2"
-"system/cpu/cpu2/cache/index2/shared_cpu_map"	"04"
-"system/cpu/cpu2/cache/index0/uevent"	""
-"system/cpu/cpu2/cache/index0/shared_cpu_list"	"2"
-"system/cpu/cpu2/cache/index0/type"	"Data"
-"system/cpu/cpu2/cache/index0/waiting_for_supplier"	"0"
-"system/cpu/cpu2/cache/index0/level"	"1"
-"system/cpu/cpu2/cache/index0/shared_cpu_map"	"04"
-"system/cpu/cpu2/cache/index3/uevent"	""
-"system/cpu/cpu2/cache/index3/shared_cpu_list"	"0-7"
-"system/cpu/cpu2/cache/index3/type"	"Unified"
-"system/cpu/cpu2/cache/index3/waiting_for_supplier"	"0"
-"system/cpu/cpu2/cache/index3/level"	"3"
-"system/cpu/cpu2/cache/index3/shared_cpu_map"	"ff"
-"system/cpu/cpu2/cache/index1/uevent"	""
-"system/cpu/cpu2/cache/index1/shared_cpu_list"	"2"
-"system/cpu/cpu2/cache/index1/type"	"Instruction"
-"system/cpu/cpu2/cache/index1/waiting_for_supplier"	"0"
-"system/cpu/cpu2/cache/index1/level"	"1"
-"system/cpu/cpu2/cache/index1/shared_cpu_map"	"04"
-"system/cpu/cpu2/cache/waiting_for_supplier"	"0"
-"system/cpu/cpu2/isolate"	"0"
-"system/cpu/cpu2/waiting_for_supplier"	"0"
-"system/cpu/cpu2/regs/identification/revidr_el1"	"0x0000000000000000"
-"system/cpu/cpu2/regs/identification/midr_el1"	"0x00000000412fd050"
-"system/cpu/cpu0/cpuidle/state1/disable"	"0"
-"system/cpu/cpu0/cpuidle/state1/above"	"0"
-"system/cpu/cpu0/cpuidle/state1/time"	"10804291148"
-"system/cpu/cpu0/cpuidle/state1/power"	"0"
-"system/cpu/cpu0/cpuidle/state1/residency"	"0"
-"system/cpu/cpu0/cpuidle/state1/latency"	"531"
-"system/cpu/cpu0/cpuidle/state1/usage"	"1124283"
-"system/cpu/cpu0/cpuidle/state1/desc"	"rail-pc"
-"system/cpu/cpu0/cpuidle/state1/below"	"0"
-"system/cpu/cpu0/cpuidle/state1/name"	"C1"
-"system/cpu/cpu0/cpuidle/state1/s2idle/time"	"0"
-"system/cpu/cpu0/cpuidle/state1/s2idle/usage"	"0"
-"system/cpu/cpu0/cpuidle/driver/name"	"msm_idle"
-"system/cpu/cpu0/cpuidle/state0/disable"	"0"
-"system/cpu/cpu0/cpuidle/state0/above"	"0"
-"system/cpu/cpu0/cpuidle/state0/time"	"8623689465"
-"system/cpu/cpu0/cpuidle/state0/power"	"0"
-"system/cpu/cpu0/cpuidle/state0/residency"	"0"
-"system/cpu/cpu0/cpuidle/state0/latency"	"43"
-"system/cpu/cpu0/cpuidle/state0/usage"	"9768399"
-"system/cpu/cpu0/cpuidle/state0/desc"	"wfi"
-"system/cpu/cpu0/cpuidle/state0/below"	"8317715"
-"system/cpu/cpu0/cpuidle/state0/name"	"C0"
-"system/cpu/cpu0/uevent"	"OF_NAME=cpu
+"system/cpu/cpu2/hotplug/target","211"
+"system/cpu/cpu2/hotplug/state","211"
+"system/cpu/cpu2/hotplug/fail","-1"
+"system/cpu/cpu2/sched_load_boost","0"
+"system/cpu/cpu2/power/runtime_active_time","0"
+"system/cpu/cpu2/power/pm_qos_resume_latency_us","0"
+"system/cpu/cpu2/power/runtime_status","unsupported"
+"system/cpu/cpu2/power/autosuspend_delay_ms",""
+"system/cpu/cpu2/power/runtime_suspended_time","0"
+"system/cpu/cpu2/power/control","auto"
+"system/cpu/cpu2/online","1"
+"system/cpu/cpu2/topology/die_id","-1"
+"system/cpu/cpu2/topology/physical_package_id","0"
+"system/cpu/cpu2/topology/core_cpus_list","2"
+"system/cpu/cpu2/topology/die_cpus_list","2"
+"system/cpu/cpu2/topology/core_siblings","0f"
+"system/cpu/cpu2/topology/core_siblings_list","0-3"
+"system/cpu/cpu2/topology/package_cpus","0f"
+"system/cpu/cpu2/topology/package_cpus_list","0-3"
+"system/cpu/cpu2/topology/die_cpus","04"
+"system/cpu/cpu2/topology/thread_siblings_list","2"
+"system/cpu/cpu2/topology/core_id","2"
+"system/cpu/cpu2/topology/core_cpus","04"
+"system/cpu/cpu2/topology/thread_siblings","04"
+"system/cpu/cpu2/cpu_capacity","325"
+"system/cpu/cpu2/cache/uevent",""
+"system/cpu/cpu2/cache/index2/uevent",""
+"system/cpu/cpu2/cache/index2/shared_cpu_list","2"
+"system/cpu/cpu2/cache/index2/type","Unified"
+"system/cpu/cpu2/cache/index2/waiting_for_supplier","0"
+"system/cpu/cpu2/cache/index2/level","2"
+"system/cpu/cpu2/cache/index2/shared_cpu_map","04"
+"system/cpu/cpu2/cache/index0/uevent",""
+"system/cpu/cpu2/cache/index0/shared_cpu_list","2"
+"system/cpu/cpu2/cache/index0/type","Data"
+"system/cpu/cpu2/cache/index0/waiting_for_supplier","0"
+"system/cpu/cpu2/cache/index0/level","1"
+"system/cpu/cpu2/cache/index0/shared_cpu_map","04"
+"system/cpu/cpu2/cache/index3/uevent",""
+"system/cpu/cpu2/cache/index3/shared_cpu_list","0-7"
+"system/cpu/cpu2/cache/index3/type","Unified"
+"system/cpu/cpu2/cache/index3/waiting_for_supplier","0"
+"system/cpu/cpu2/cache/index3/level","3"
+"system/cpu/cpu2/cache/index3/shared_cpu_map","ff"
+"system/cpu/cpu2/cache/index1/uevent",""
+"system/cpu/cpu2/cache/index1/shared_cpu_list","2"
+"system/cpu/cpu2/cache/index1/type","Instruction"
+"system/cpu/cpu2/cache/index1/waiting_for_supplier","0"
+"system/cpu/cpu2/cache/index1/level","1"
+"system/cpu/cpu2/cache/index1/shared_cpu_map","04"
+"system/cpu/cpu2/cache/waiting_for_supplier","0"
+"system/cpu/cpu2/isolate","0"
+"system/cpu/cpu2/waiting_for_supplier","0"
+"system/cpu/cpu2/regs/identification/revidr_el1","0x0000000000000000"
+"system/cpu/cpu2/regs/identification/midr_el1","0x00000000412fd050"
+"system/cpu/cpu0/cpuidle/state1/disable","0"
+"system/cpu/cpu0/cpuidle/state1/above","0"
+"system/cpu/cpu0/cpuidle/state1/time","10804291148"
+"system/cpu/cpu0/cpuidle/state1/power","0"
+"system/cpu/cpu0/cpuidle/state1/residency","0"
+"system/cpu/cpu0/cpuidle/state1/latency","531"
+"system/cpu/cpu0/cpuidle/state1/usage","1124283"
+"system/cpu/cpu0/cpuidle/state1/desc","rail-pc"
+"system/cpu/cpu0/cpuidle/state1/below","0"
+"system/cpu/cpu0/cpuidle/state1/name","C1"
+"system/cpu/cpu0/cpuidle/state1/s2idle/time","0"
+"system/cpu/cpu0/cpuidle/state1/s2idle/usage","0"
+"system/cpu/cpu0/cpuidle/driver/name","msm_idle"
+"system/cpu/cpu0/cpuidle/state0/disable","0"
+"system/cpu/cpu0/cpuidle/state0/above","0"
+"system/cpu/cpu0/cpuidle/state0/time","8623689465"
+"system/cpu/cpu0/cpuidle/state0/power","0"
+"system/cpu/cpu0/cpuidle/state0/residency","0"
+"system/cpu/cpu0/cpuidle/state0/latency","43"
+"system/cpu/cpu0/cpuidle/state0/usage","9768399"
+"system/cpu/cpu0/cpuidle/state0/desc","wfi"
+"system/cpu/cpu0/cpuidle/state0/below","8317715"
+"system/cpu/cpu0/cpuidle/state0/name","C0"
+"system/cpu/cpu0/uevent","OF_NAME=cpu
 OF_FULLNAME=/cpus/cpu@0
 OF_TYPE=cpu
 OF_COMPATIBLE_0=qcom,kryo
 OF_COMPATIBLE_N=1
 MODALIAS=cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
-"system/cpu/cpu0/hotplug/target"	"0"
-"system/cpu/cpu0/hotplug/state"	"211"
-"system/cpu/cpu0/hotplug/fail"	"-1"
-"system/cpu/cpu0/sched_load_boost"	"0"
-"system/cpu/cpu0/power/runtime_active_time"	"0"
-"system/cpu/cpu0/power/pm_qos_resume_latency_us"	"0"
-"system/cpu/cpu0/power/runtime_status"	"unsupported"
-"system/cpu/cpu0/power/autosuspend_delay_ms"	""
-"system/cpu/cpu0/power/runtime_suspended_time"	"0"
-"system/cpu/cpu0/power/control"	"auto"
-"system/cpu/cpu0/core_ctl/task_thres"	"4294967295"
-"system/cpu/cpu0/core_ctl/max_cpus"	"4"
-"system/cpu/cpu0/core_ctl/need_cpus"	"4"
-"system/cpu/cpu0/core_ctl/offline_delay_ms"	"100"
-"system/cpu/cpu0/core_ctl/active_cpus"	"4"
-"system/cpu/cpu0/core_ctl/busy_down_thres"	"0 0 0 0 "
-"system/cpu/cpu0/core_ctl/nr_prev_assist_thresh"	"4294967295"
-"system/cpu/cpu0/core_ctl/not_preferred"	"CPU#0: 0
+"system/cpu/cpu0/hotplug/target","0"
+"system/cpu/cpu0/hotplug/state","211"
+"system/cpu/cpu0/hotplug/fail","-1"
+"system/cpu/cpu0/sched_load_boost","0"
+"system/cpu/cpu0/power/runtime_active_time","0"
+"system/cpu/cpu0/power/pm_qos_resume_latency_us","0"
+"system/cpu/cpu0/power/runtime_status","unsupported"
+"system/cpu/cpu0/power/autosuspend_delay_ms",""
+"system/cpu/cpu0/power/runtime_suspended_time","0"
+"system/cpu/cpu0/power/control","auto"
+"system/cpu/cpu0/core_ctl/task_thres","4294967295"
+"system/cpu/cpu0/core_ctl/max_cpus","4"
+"system/cpu/cpu0/core_ctl/need_cpus","4"
+"system/cpu/cpu0/core_ctl/offline_delay_ms","100"
+"system/cpu/cpu0/core_ctl/active_cpus","4"
+"system/cpu/cpu0/core_ctl/busy_down_thres","0 0 0 0 "
+"system/cpu/cpu0/core_ctl/nr_prev_assist_thresh","4294967295"
+"system/cpu/cpu0/core_ctl/not_preferred","CPU#0: 0
 CPU#1: 0
 CPU#2: 0
 CPU#3: 0"
-"system/cpu/cpu0/core_ctl/global_state"	"CPU0
-	CPU: 0
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 7
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+"system/cpu/cpu0/core_ctl/global_state","CPU0
+,CPU: 0
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 7
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU1
-	CPU: 1
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 5
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 1
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 5
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU2
-	CPU: 2
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 3
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 2
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 3
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU3
-	CPU: 3
-	Online: 1
-	Isolated: 0
-	First CPU: 0
-	Busy%: 1
-	Is busy: 1
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 4
-	Need CPUs: 4
-	Nr isolated CPUs: 0
-	Boost: 0
-	OPBoost: 0
+,CPU: 3
+,Online: 1
+,Isolated: 0
+,First CPU: 0
+,Busy%: 1
+,Is busy: 1
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 4
+,Need CPUs: 4
+,Nr isolated CPUs: 0
+,Boost: 0
+,OPBoost: 0
 CPU4
-	CPU: 4
-	Online: 1
-	Isolated: 1
-	First CPU: 4
-	Busy%: 0
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 2
-	Need CPUs: 2
-	Nr isolated CPUs: 1
-	Boost: 0
-	OPBoost: 0
+,CPU: 4
+,Online: 1
+,Isolated: 1
+,First CPU: 4
+,Busy%: 0
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 2
+,Need CPUs: 2
+,Nr isolated CPUs: 1
+,Boost: 0
+,OPBoost: 0
 CPU5
-	CPU: 5
-	Online: 1
-	Isolated: 0
-	First CPU: 4
-	Busy%: 26
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 2
-	Need CPUs: 2
-	Nr isolated CPUs: 1
-	Boost: 0
-	OPBoost: 0
+,CPU: 5
+,Online: 1
+,Isolated: 0
+,First CPU: 4
+,Busy%: 26
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 2
+,Need CPUs: 2
+,Nr isolated CPUs: 1
+,Boost: 0
+,OPBoost: 0
 CPU6
-	CPU: 6
-	Online: 1
-	Isolated: 0
-	First CPU: 4
-	Busy%: 3
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 1
-	Active CPUs: 2
-	Need CPUs: 2
-	Nr isolated CPUs: 1
-	Boost: 0
-	OPBoost: 0
+,CPU: 6
+,Online: 1
+,Isolated: 0
+,First CPU: 4
+,Busy%: 3
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 1
+,Active CPUs: 2
+,Need CPUs: 2
+,Nr isolated CPUs: 1
+,Boost: 0
+,OPBoost: 0
 CPU7
-	CPU: 7
-	Online: 1
-	Isolated: 1
-	First CPU: 7
-	Busy%: 0
-	Is busy: 0
-	Not preferred: 0
-	Nr running: 0
-	Active CPUs: 0
-	Need CPUs: 0
-	Nr isolated CPUs: 1
-	Boost: 0
-	OPBoost: 0"
-"system/cpu/cpu0/core_ctl/min_cpus"	"1"
-"system/cpu/cpu0/core_ctl/busy_up_thres"	"0 0 0 0 "
-"system/cpu/cpu0/core_ctl/enable"	"0"
-"system/cpu/cpu0/online"	"1"
-"system/cpu/cpu0/topology/die_id"	"-1"
-"system/cpu/cpu0/topology/physical_package_id"	"0"
-"system/cpu/cpu0/topology/core_cpus_list"	"0"
-"system/cpu/cpu0/topology/die_cpus_list"	"0"
-"system/cpu/cpu0/topology/core_siblings"	"0f"
-"system/cpu/cpu0/topology/core_siblings_list"	"0-3"
-"system/cpu/cpu0/topology/package_cpus"	"0f"
-"system/cpu/cpu0/topology/package_cpus_list"	"0-3"
-"system/cpu/cpu0/topology/die_cpus"	"01"
-"system/cpu/cpu0/topology/thread_siblings_list"	"0"
-"system/cpu/cpu0/topology/core_id"	"0"
-"system/cpu/cpu0/topology/core_cpus"	"01"
-"system/cpu/cpu0/topology/thread_siblings"	"01"
-"system/cpu/cpu0/cpu_capacity"	"325"
-"system/cpu/cpu0/dcvsh_freq_limit"	"4294967295"
-"system/cpu/cpu0/cache/uevent"	""
-"system/cpu/cpu0/cache/index2/uevent"	""
-"system/cpu/cpu0/cache/index2/shared_cpu_list"	"0"
-"system/cpu/cpu0/cache/index2/type"	"Unified"
-"system/cpu/cpu0/cache/index2/waiting_for_supplier"	"0"
-"system/cpu/cpu0/cache/index2/level"	"2"
-"system/cpu/cpu0/cache/index2/shared_cpu_map"	"01"
-"system/cpu/cpu0/cache/index0/uevent"	""
-"system/cpu/cpu0/cache/index0/shared_cpu_list"	"0"
-"system/cpu/cpu0/cache/index0/type"	"Data"
-"system/cpu/cpu0/cache/index0/waiting_for_supplier"	"0"
-"system/cpu/cpu0/cache/index0/level"	"1"
-"system/cpu/cpu0/cache/index0/shared_cpu_map"	"01"
-"system/cpu/cpu0/cache/index3/uevent"	""
-"system/cpu/cpu0/cache/index3/shared_cpu_list"	"0-7"
-"system/cpu/cpu0/cache/index3/type"	"Unified"
-"system/cpu/cpu0/cache/index3/waiting_for_supplier"	"0"
-"system/cpu/cpu0/cache/index3/level"	"3"
-"system/cpu/cpu0/cache/index3/shared_cpu_map"	"ff"
-"system/cpu/cpu0/cache/index1/uevent"	""
-"system/cpu/cpu0/cache/index1/shared_cpu_list"	"0"
-"system/cpu/cpu0/cache/index1/type"	"Instruction"
-"system/cpu/cpu0/cache/index1/waiting_for_supplier"	"0"
-"system/cpu/cpu0/cache/index1/level"	"1"
-"system/cpu/cpu0/cache/index1/shared_cpu_map"	"01"
-"system/cpu/cpu0/cache/waiting_for_supplier"	"0"
-"system/cpu/cpu0/isolate"	"0"
-"system/cpu/cpu0/waiting_for_supplier"	"0"
-"system/cpu/cpu0/regs/identification/revidr_el1"	"0x0000000000000000"
-"system/cpu/cpu0/regs/identification/midr_el1"	"0x00000000412fd050"
-"system/cpu/modalias"	"cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
+,CPU: 7
+,Online: 1
+,Isolated: 1
+,First CPU: 7
+,Busy%: 0
+,Is busy: 0
+,Not preferred: 0
+,Nr running: 0
+,Active CPUs: 0
+,Need CPUs: 0
+,Nr isolated CPUs: 1
+,Boost: 0
+,OPBoost: 0"
+"system/cpu/cpu0/core_ctl/min_cpus","1"
+"system/cpu/cpu0/core_ctl/busy_up_thres","0 0 0 0 "
+"system/cpu/cpu0/core_ctl/enable","0"
+"system/cpu/cpu0/online","1"
+"system/cpu/cpu0/topology/die_id","-1"
+"system/cpu/cpu0/topology/physical_package_id","0"
+"system/cpu/cpu0/topology/core_cpus_list","0"
+"system/cpu/cpu0/topology/die_cpus_list","0"
+"system/cpu/cpu0/topology/core_siblings","0f"
+"system/cpu/cpu0/topology/core_siblings_list","0-3"
+"system/cpu/cpu0/topology/package_cpus","0f"
+"system/cpu/cpu0/topology/package_cpus_list","0-3"
+"system/cpu/cpu0/topology/die_cpus","01"
+"system/cpu/cpu0/topology/thread_siblings_list","0"
+"system/cpu/cpu0/topology/core_id","0"
+"system/cpu/cpu0/topology/core_cpus","01"
+"system/cpu/cpu0/topology/thread_siblings","01"
+"system/cpu/cpu0/cpu_capacity","325"
+"system/cpu/cpu0/dcvsh_freq_limit","4294967295"
+"system/cpu/cpu0/cache/uevent",""
+"system/cpu/cpu0/cache/index2/uevent",""
+"system/cpu/cpu0/cache/index2/shared_cpu_list","0"
+"system/cpu/cpu0/cache/index2/type","Unified"
+"system/cpu/cpu0/cache/index2/waiting_for_supplier","0"
+"system/cpu/cpu0/cache/index2/level","2"
+"system/cpu/cpu0/cache/index2/shared_cpu_map","01"
+"system/cpu/cpu0/cache/index0/uevent",""
+"system/cpu/cpu0/cache/index0/shared_cpu_list","0"
+"system/cpu/cpu0/cache/index0/type","Data"
+"system/cpu/cpu0/cache/index0/waiting_for_supplier","0"
+"system/cpu/cpu0/cache/index0/level","1"
+"system/cpu/cpu0/cache/index0/shared_cpu_map","01"
+"system/cpu/cpu0/cache/index3/uevent",""
+"system/cpu/cpu0/cache/index3/shared_cpu_list","0-7"
+"system/cpu/cpu0/cache/index3/type","Unified"
+"system/cpu/cpu0/cache/index3/waiting_for_supplier","0"
+"system/cpu/cpu0/cache/index3/level","3"
+"system/cpu/cpu0/cache/index3/shared_cpu_map","ff"
+"system/cpu/cpu0/cache/index1/uevent",""
+"system/cpu/cpu0/cache/index1/shared_cpu_list","0"
+"system/cpu/cpu0/cache/index1/type","Instruction"
+"system/cpu/cpu0/cache/index1/waiting_for_supplier","0"
+"system/cpu/cpu0/cache/index1/level","1"
+"system/cpu/cpu0/cache/index1/shared_cpu_map","01"
+"system/cpu/cpu0/cache/waiting_for_supplier","0"
+"system/cpu/cpu0/isolate","0"
+"system/cpu/cpu0/waiting_for_supplier","0"
+"system/cpu/cpu0/regs/identification/revidr_el1","0x0000000000000000"
+"system/cpu/cpu0/regs/identification/midr_el1","0x00000000412fd050"
+"system/cpu/modalias","cpu:type:aarch64:feature:,0000,0001,0002,0003,0004,0005,0006,0007,0008,0009,000A,000B,000C,000F,0010,0014"
