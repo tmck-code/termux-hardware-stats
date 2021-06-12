@@ -7,7 +7,6 @@ import multiprocessing
 from functools import lru_cache
 
 
-version_info = [6, 1]
 FPATHS = {
     'global_state': '/sys/devices/system/cpu/cpu{:d}/core_ctl/global_state',
 	'curr_freq': '/sys/devices/system/cpu/cpu{:d}/cpufreq/scaling_cur_freq',
@@ -50,7 +49,7 @@ class CPUGlobalStateReader:
             next(istream)
             for i in range(self.n_cores):
                 stats_chunk = list(takewhile(lambda x: not x.startswith('CPU'), istream))
-                yield GlobalState(*list(map(lambda x: x.strip().split(': ')[1], stats_chunk)))
+                yield GlobalState(*list(map(lambda x: x.strip().split(': ')[1], stats_chunk)))._asdict()
 
 FREQ_KEYS = ['curr_freq', 'min_freq', 'max_freq']
 
@@ -60,30 +59,21 @@ class CPUFrequencyReader:
         return [int(next(open(FPATHS[k].format(n)))) for k in FREQ_KEYS]
 
     def load_all():
-        for i in range(TermuxPSUtilHardwareStats.cpu_count()):
-            yield CPUFrequency(*CPUFrequencyReader.load_for_core(i))
+        for i in range(TermuxHardwareStats.cpu_count()):
+            yield CPUFrequency(*CPUFrequencyReader.load_for_core(i))._asdict()
 
 @dataclass
-class TermuxPSUtilHardwareStats:
+class TermuxHardwareStats:
     @lru_cache
     def cpu_count(logical=False):
         return multiprocessing.cpu_count()
 
-    def cpu_percent(interval=None, percpu=False):
+    def cpu_percent():
         values = []
-        for cpu_stats in CPUGlobalStateReader(FPATHS['global_state'].format(0), TermuxPSUtilHardwareStats.cpu_count()).load_all():
-            values.append(float(cpu_stats.BusyPercentage))
-        if percpu:
-            return values
-        else:
-            return round(sum(values) / len(values), 2)
+        for cpu_stats in CPUGlobalStateReader(FPATHS['global_state'].format(0), TermuxHardwareStats.cpu_count()).load_all():
+            values.append(float(cpu_stats['BusyPercentage']))
+        return values
 
-    def cpu_freq(percpu=False):
-        values = list(CPUFrequencyReader.load_all())
-        if percpu:
-            return values
-        else:
-            return values[0]
+    def cpu_freq():
+        return list(CPUFrequencyReader.load_all())
 
-    def cpu_times_percent():
-        pass
