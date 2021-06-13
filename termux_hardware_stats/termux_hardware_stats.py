@@ -12,6 +12,7 @@ FPATHS = {
 	'curr_freq': '/sys/devices/system/cpu/cpu{:d}/cpufreq/scaling_cur_freq',
 	'min_freq': '/sys/devices/system/cpu/cpu{:d}/cpufreq/scaling_min_freq',
 	'max_freq': '/sys/devices/system/cpu/cpu{:d}/cpufreq/scaling_max_freq',
+    'mem_info': '/proc/meminfo',
 }
 
 GlobalState = namedtuple(
@@ -36,6 +37,55 @@ CPUFrequency = namedtuple(
         'current',
         'min',
         'max',
+    ]
+)
+MemoryInfo = namedtuple(
+    'MemoryInfo', [
+        'MemTotal',
+        'MemFree',
+        'MemAvailable',
+        'Buffers',
+        'Cached',
+        'SwapCached',
+        'Active',
+        'Inactive',
+        'Active_anon',
+        'Inactive_anon',
+        'Active_file',
+        'Inactive_file',
+        'Unevictable',
+        'Mlocked',
+        'SwapTotal',
+        'SwapFree',
+        'Dirty',
+        'Writeback',
+        'AnonPages',
+        'Mapped',
+        'Shmem',
+        'KReclaimable',
+        'Slab',
+        'SReclaimable',
+        'SUnreclaim',
+        'KernelStack',
+        'ShadowCallStack',
+        'PageTables',
+        'NFS_Unstable',
+        'Bounce',
+        'WritebackTmp',
+        'CommitLimit',
+        'Committed_AS',
+        'VmallocTotal',
+        'VmallocUsed',
+        'VmallocChunk',
+        'Percpu',
+        'IonTotalCache',
+        'IonTotalUsed',
+        'CmaTotal',
+        'CmaFree',
+        'FastRPCUsed',
+        'KgslCache',
+        'DefragPoolFree',
+        'RealMemFree',
     ]
 )
 
@@ -63,6 +113,14 @@ class CPUFrequencyReader:
             yield CPUFrequency(*CPUFrequencyReader.load_for_core(i))._asdict()
 
 @dataclass
+class MemInfoReader:
+    fpath: str
+
+    def load_all(self):
+        with open(self.fpath) as istream:
+            return MemoryInfo(*list(map(lambda x: x.strip().split(': ')[1].strip().split(' '), istream)))._asdict()
+
+@dataclass
 class TermuxHardwareStats:
     @lru_cache
     def cpu_count(logical=False):
@@ -76,4 +134,12 @@ class TermuxHardwareStats:
 
     def cpu_freq():
         return list(CPUFrequencyReader.load_all())
+
+    def mem_info():
+        info = MemInfoReader(FPATHS['mem_info']).load_all()
+        pct = 100*(float(info['MemTotal'][0]) - float(info['MemFree'][0])) / float(info['MemTotal'][0])
+        return {
+            'UsedPercentage': round(pct, 2),
+            'Total': info['MemTotal'],
+        }
 
