@@ -1,55 +1,60 @@
+from __future__ import annotations
 from dataclasses import dataclass, asdict
 from collections import namedtuple
+from os import stat
 
-MemoryInfoComplete = namedtuple(
-    'MemoryInfoComplete', [
-        'MemTotal',
-        'MemFree', # The amount of physical memory not used by the system
-        'MemAvailable',
-        'Buffers',
-        'Cached',
-        'SwapCached',
-        'Active',
-        'Inactive',
-        'Active_anon',
-        'Inactive_anon',
-        'Active_file',
-        'Inactive_file',
-        'Unevictable',
-        'Mlocked',
-        'SwapTotal',
-        'SwapFree',
-        'Dirty',
-        'Writeback',
-        'AnonPages',
-        'Mapped',
-        'Shmem', # Total used shared memory (shared between several processes, thus including RAM disks, SYS-V-IPC and BSD like SHMEM)
-        'KReclaimable',
-        'Slab',
-        'SReclaimable',
-        'SUnreclaim',
-        'KernelStack',
-        'ShadowCallStack',
-        'PageTables',
-        'NFS_Unstable',
-        'Bounce',
-        'WritebackTmp',
-        'CommitLimit',
-        'Committed_AS',
-        'VmallocTotal',
-        'VmallocUsed',
-        'VmallocChunk',
-        'Percpu',
-        'IonTotalCache',
-        'IonTotalUsed',
-        'CmaTotal',
-        'CmaFree',
-        'FastRPCUsed',
-        'KgslCache',
-        'DefragPoolFree',
-        'RealMemFree',
-    ]
-)
+@dataclass
+class MemoryInfoComplete:
+    MemTotal:        int
+    MemFree:         int # The amount of physical memory not used by the system
+    MemAvailable:    int
+    Buffers:         int
+    Cached:          int
+    SwapCached:      int
+    Active:          int
+    Inactive:        int
+    Active_anon:     int
+    Inactive_anon:   int
+    Active_file:     int
+    Inactive_file:   int
+    Unevictable:     int
+    Mlocked:         int
+    SwapTotal:       int
+    SwapFree:        int
+    Dirty:           int
+    Writeback:       int
+    AnonPages:       int
+    Mapped:          int
+    Shmem:           int # Total used shared memory (shared between several processes, thus including RAM disks, SYS-V-IPC and BSD like SHMEM)
+    KReclaimable:    int
+    Slab:            int
+    SReclaimable:    int
+    SUnreclaim:      int
+    KernelStack:     int
+    ShadowCallStack: int
+    PageTables:      int
+    NFS_Unstable:    int
+    Bounce:          int
+    WritebackTmp:    int
+    CommitLimit:     int
+    Committed_AS:    int
+    VmallocTotal:    int
+    VmallocUsed:     int
+    VmallocChunk:    int
+    Percpu:          int
+    IonTotalCache:   int
+    IonTotalUsed:    int
+    CmaTotal:        int
+    CmaFree:         int
+    FastRPCUsed:     int
+    KgslCache:       int
+    DefragPoolFree:  int
+    RealMemFree:     int
+
+    @staticmethod
+    def from_file(istream) -> MemoryInfoComplete:
+        return MemoryInfoComplete(*list(map(lambda x: int(x.strip().split(': ')[1].strip().split(' ')[0]), istream)))
+
 
 @dataclass
 class RamInfo:
@@ -70,32 +75,31 @@ class MemoryInfo:
     ram: RamInfo
     swap: SwapInfo
 
+    @staticmethod
+    def from_complete_info(info: MemoryInfoComplete) -> MemoryInfo:
+        return MemoryInfo(
+            ram=RamInfo(
+                available = info.MemAvailable,
+                free      = info.MemFree,
+                used      = info.MemTotal - info.MemFree - info.Buffers - info.Cached - info.Slab,
+                total     = info.MemTotal,
+                shared    = info.Shmem,
+            ),
+            swap=SwapInfo(
+                cached = info.SwapCached,
+                free   = info.SwapFree,
+                total  = info.SwapTotal,
+            )
+        )
+
+
 @dataclass
 class MemInfoReader:
     fpath: str
 
     def load_all(self) -> MemoryInfoComplete:
         with open(self.fpath) as istream:
-            return MemoryInfoComplete(*list(map(lambda x: x.strip().split(': ')[1].strip().split(' '), istream)))._asdict()
+            return MemoryInfoComplete.from_file(istream)
 
     def load(self):
-        info = self.load_all()
-        return asdict(MemoryInfo(
-            ram=RamInfo(
-                available = int(info['MemAvailable'][0]),
-                free      = int(info['MemFree'][0]),
-                used      = int(
-                    int(info['MemTotal'][0]) \
-                        - int(info['MemFree'][0])  \
-                        - int(info['Buffers'][0])  \
-                        - int(info['Cached'][0]) - int(info['Slab'][0])
-                ),
-                total     = int(info['MemTotal'][0]),
-                shared    = int(info['Shmem'][0]),
-            ),
-            swap=SwapInfo(
-                cached = int(info['SwapCached'][0]),
-                free   = int(info['SwapFree'][0]),
-                total  = int(info['SwapTotal'][0]),
-            )
-        ))
+        return MemoryInfo.from_complete_info(self.load_all())
