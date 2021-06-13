@@ -60,7 +60,7 @@ class TestTermuxMem:
         if os.path.exists('test/meminfo.txt'):
             os.remove('test/meminfo.txt')
 
-    def test_mem(self):
+    def test_mem_load_all(self):
         expected = {
             'Active':          ['4831040', 'kB'],
             'Active_anon':     ['3856004', 'kB'],
@@ -109,4 +109,22 @@ class TestTermuxMem:
             'WritebackTmp':    ['0', 'kB']
         }
         result = termux_mem.MemInfoReader('test/meminfo.txt').load_all()
+        assert result == expected
+
+    def test_mem_load(self):
+        expected = {
+            'ram': {
+                'available': 3772232,
+                'used':      6686648, # TODO: check this value
+                'free':      1444048,
+                'total':     11430728,
+                'shared':    197364,
+            },
+            'swap': {
+                'cached': 26800,
+                'free':   3721160,
+                'total':  4194300,
+            }
+        }
+        result = termux_mem.MemInfoReader('test/meminfo.txt').load()
         assert result == expected
