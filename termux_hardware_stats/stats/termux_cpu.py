@@ -43,6 +43,9 @@ class CPUGlobalStateReader:
             for i in range(self.n_cores):
                 stats_chunk = list(takewhile(lambda x: not x.startswith('CPU'), istream))
                 yield GlobalState(*list(map(lambda x: int(x.strip().split(': ')[1]), stats_chunk)))
+                
+    def load_percentages(self):
+        return [core.BusyPercentage for core in self.load_all()]
 
 @dataclass
 class CPUFrequencyReader:

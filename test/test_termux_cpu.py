@@ -150,5 +150,10 @@ class TestTermuxCPU:
         assert all(isinstance(el, termux_cpu.GlobalState) for el in result)
         assert asdict(result[0]) == expected[0]
 
-    def test_load(self):
+    def test_load_usage(self):
+        expected = [56, 78, 100, 43, 84, 100, 100, 100]
+        result = termux_cpu.CPUGlobalStateReader('test/global_state.txt', 8).load()
+        assert result == expected
+
+    def test_load_frequencies(self):
         pass
