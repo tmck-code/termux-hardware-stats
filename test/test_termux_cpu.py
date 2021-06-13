@@ -1,4 +1,5 @@
 from termux_hardware_stats.stats import termux_cpu
+from dataclasses import asdict
 import os
 
 FILE_DATA = '''\
@@ -146,4 +147,8 @@ class TestTermuxCPU:
             },
         ]
         result = list(termux_cpu.CPUGlobalStateReader('test/global_state.txt', 1).load_all())
-        assert result == expected
+        assert all(isinstance(el, termux_cpu.GlobalState) for el in result)
+        assert asdict(result[0]) == expected[0]
+
+	def test_load(self):
+		pass

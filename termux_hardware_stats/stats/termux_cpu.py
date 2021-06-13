@@ -1,6 +1,6 @@
 from collections import namedtuple
 from itertools import takewhile
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 
 FREQ_KEYS = ['curr_freq', 'min_freq', 'max_freq']
 
@@ -10,31 +10,27 @@ FPATHS = {
 	'max_freq': '/sys/devices/system/cpu/cpu{:d}/cpufreq/scaling_max_freq',
 }
 
-GlobalState = namedtuple(
-    'GlobalState', [
-        'CPU',
-        'Online',
-        'Isolated',
-        'FirstCPU',
-        'BusyPercentage',
-        'IsBusy',
-        'NotPreferred',
-        'NrRunning',
-        'ActiveCPUs',
-        'NeedCPUs',
-        'NrIsolatedCPUs',
-        'Boost',
-        'OPBoost',
-    ]
-)
-CPUFrequency = namedtuple(
-    'CPUFrequency', [
-        'current',
-        'min',
-        'max',
-    ]
-)
+@dataclass
+class GlobalState:
+    CPU:            str
+    Online:         str
+    Isolated:       str
+    FirstCPU:       str
+    BusyPercentage: str
+    IsBusy:         str
+    NotPreferred:   str
+    NrRunning:      str
+    ActiveCPUs:     str
+    NeedCPUs:       str
+    NrIsolatedCPUs: str
+    Boost:          str
+    OPBoost:        str
 
+@dataclass
+class CPUFrequency:
+    current: int
+    min:     int
+    max:     int
 
 @dataclass
 class CPUGlobalStateReader:
@@ -46,7 +42,7 @@ class CPUGlobalStateReader:
             next(istream)
             for i in range(self.n_cores):
                 stats_chunk = list(takewhile(lambda x: not x.startswith('CPU'), istream))
-                yield GlobalState(*list(map(lambda x: x.strip().split(': ')[1], stats_chunk)))._asdict()
+                yield GlobalState(*list(map(lambda x: x.strip().split(': ')[1], stats_chunk)))
 
 @dataclass
 class CPUFrequencyReader:
@@ -57,4 +53,4 @@ class CPUFrequencyReader:
 
     def load_all(self):
         for i in range(self.cpu_count):
-            yield CPUFrequency(*CPUFrequencyReader.load_for_core(i))._asdict()
+            yield CPUFrequency(*CPUFrequencyReader.load_for_core(i))
