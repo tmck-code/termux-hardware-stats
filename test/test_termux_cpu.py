@@ -131,24 +131,24 @@ class TestTermuxCPU:
     def test_global_state(self):
         expected = [
             {
-                'ActiveCPUs':     '4',
-                'Boost':          '0',
-                'BusyPercentage': '56',
-                'CPU':            '0',
-                'FirstCPU':       '0',
-                'IsBusy':         '1',
-                'Isolated':       '0',
-                'NeedCPUs':       '4',
-                'NotPreferred':   '0',
-                'NrIsolatedCPUs': '0',
-                'NrRunning':      '11',
-                'OPBoost':        '0',
-                'Online':         '1',
+                'ActiveCPUs':     4,
+                'Boost':          0,
+                'BusyPercentage': 56,
+                'CPU':            0,
+                'FirstCPU':       0,
+                'IsBusy':         1,
+                'Isolated':       0,
+                'NeedCPUs':       4,
+                'NotPreferred':   0,
+                'NrIsolatedCPUs': 0,
+                'NrRunning':      11,
+                'OPBoost':        0,
+                'Online':         1,
             },
         ]
         result = list(termux_cpu.CPUGlobalStateReader('test/global_state.txt', 1).load_all())
         assert all(isinstance(el, termux_cpu.GlobalState) for el in result)
         assert asdict(result[0]) == expected[0]
 
-	def test_load(self):
-		pass
+    def test_load(self):
+        pass

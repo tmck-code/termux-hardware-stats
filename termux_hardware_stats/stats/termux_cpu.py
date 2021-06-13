@@ -42,7 +42,7 @@ class CPUGlobalStateReader:
             next(istream)
             for i in range(self.n_cores):
                 stats_chunk = list(takewhile(lambda x: not x.startswith('CPU'), istream))
-                yield GlobalState(*list(map(lambda x: x.strip().split(': ')[1], stats_chunk)))
+                yield GlobalState(*list(map(lambda x: int(x.strip().split(': ')[1]), stats_chunk)))
 
 @dataclass
 class CPUFrequencyReader:
