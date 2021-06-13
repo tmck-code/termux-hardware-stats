@@ -5,11 +5,9 @@ from dataclasses import dataclass
 FREQ_KEYS = ['curr_freq', 'min_freq', 'max_freq']
 
 FPATHS = {
-    'global_state': '/sys/devices/system/cpu/cpu{:d}/core_ctl/global_state',
 	'curr_freq': '/sys/devices/system/cpu/cpu{:d}/cpufreq/scaling_cur_freq',
 	'min_freq': '/sys/devices/system/cpu/cpu{:d}/cpufreq/scaling_min_freq',
 	'max_freq': '/sys/devices/system/cpu/cpu{:d}/cpufreq/scaling_max_freq',
-    'mem_info': '/proc/meminfo',
 }
 
 GlobalState = namedtuple(
