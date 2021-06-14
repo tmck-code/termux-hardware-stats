@@ -43,7 +43,7 @@ def cpu_count():
 
 @dataclass
 class CPUGlobalStateReader:
-    n_cores: int
+    n_cores: int = cpu_count()
     fpath: str = DEFAULT_GLOBAL_STATE_FPATH
 
     def load_all(self):
@@ -73,10 +73,9 @@ class CPUFrequencyReader:
     cpu_count: int
     fpaths:    CPUFrequencyFpaths = field(default_factory=CPUFrequencyFpaths)
 
-    @staticmethod
-    def load_for_core(fpaths):
-        return [int(next(open(fpath))) for fpath in fpaths]
+    def load_for_core(self, n):
+        return [int(next(open(fpath))) for fpath in self.fpaths.for_core(n)]
 
     def load_all(self):
         for i in range(self.cpu_count):
-            yield CPUFrequency(*CPUFrequencyReader.load_for_core(self.fpaths.for_core(i)))
+            yield CPUFrequency(*self.load_for_core(i))
