@@ -2,6 +2,8 @@ from collections import defaultdict, namedtuple
 from itertools import takewhile
 from dataclasses import dataclass, asdict, field
 from os import strerror
+import multiprocessing
+from functools import lru_cache
 
 DEFAULT_GLOBAL_STATE_FPATH = '/sys/devices/system/cpu/cpu0/core_ctl/global_state'
 
@@ -34,6 +36,10 @@ class CPUFrequency:
     current: int
     min:     int
     max:     int
+
+@lru_cache
+def cpu_count():
+    return multiprocessing.cpu_count()
 
 @dataclass
 class CPUGlobalStateReader:
