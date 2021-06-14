@@ -1,5 +1,6 @@
 from glob import glob
 import os
+import ujson as json
 
 def parse_temp(value):
     return round(float(value)/1000, 2)
@@ -19,17 +20,14 @@ TYPES = [
     'cpu-1-7-usr',
 ]
 
-for d in glob('/sys/class/thermal/thermal_zone*'):
-    values = []
-    for typ in ['type', 'temp']:
-        fpath = f'{d}/{typ}'
-        if not os.path.exists(fpath):
+def load_temps():
+    values = {}
+    for d in glob('/sys/class/thermal/thermal_zone*'):
+        with open(f'{d}/type') as istream:
+            typ = istream.read().strip()
+        if typ not in TYPES:
             continue
-        try:
-            with open(fpath) as istream:
-                values.append(istream.read().strip())
-        except OSError as e:
-            # print(d, typ, values, e.__class__, e)
-            values.append(0)
-    if values[0] in TYPES:
-        print(values[0], parse_temp(values[1]), d)
+        with open(f'{d}/temp') as istream:
+            values[typ] = parse_temp(istream.read().strip())
+    return dict(sorted(values.items()))
+
