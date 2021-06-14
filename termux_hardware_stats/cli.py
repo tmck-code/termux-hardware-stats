@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass, asdict
 
-from stats import termux_cpu, termux_mem
+from termux_hardware_stats.stats import termux_cpu, termux_mem
 
 import argparse
 
