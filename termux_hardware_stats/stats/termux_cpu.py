@@ -3,6 +3,8 @@ from itertools import takewhile
 from dataclasses import dataclass, asdict, field
 from os import strerror
 
+DEFAULT_GLOBAL_STATE_FPATH = '/sys/devices/system/cpu/cpu0/core_ctl/global_state'
+
 FREQ_KEYS = ['curr_freq', 'min_freq', 'max_freq']
 
 FPATHS = {
@@ -35,8 +37,8 @@ class CPUFrequency:
 
 @dataclass
 class CPUGlobalStateReader:
-    fpath: str
     n_cores: int
+    fpath: str = DEFAULT_GLOBAL_STATE_FPATH
 
     def load_all(self):
         with open(self.fpath) as istream:

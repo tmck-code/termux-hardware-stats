@@ -3,6 +3,8 @@ from dataclasses import dataclass, asdict
 from collections import namedtuple
 from os import stat
 
+DEFAULT_MEMINFO_FPATH = '/proc/meminfo'
+
 @dataclass
 class MemoryInfoComplete:
     MemTotal:        int
@@ -95,7 +97,7 @@ class MemoryInfo:
 
 @dataclass
 class MemInfoReader:
-    fpath: str
+    fpath: str = DEFAULT_MEMINFO_FPATH
 
     def load_all(self) -> MemoryInfoComplete:
         with open(self.fpath) as istream:

@@ -93,13 +93,13 @@ class TestTermuxCPU:
                 'Online':         1,
             },
         ]
-        result = list(termux_cpu.CPUGlobalStateReader('test/global_state.txt', 1).load_all())
+        result = list(termux_cpu.CPUGlobalStateReader(fpath='test/global_state.txt', n_cores=1).load_all())
         assert all(isinstance(el, termux_cpu.GlobalState) for el in result)
         assert asdict(result[0]) == expected[0]
 
     def test_core_usage(self):
         expected = [56, 78, 100, 43]
-        result = termux_cpu.CPUGlobalStateReader('test/global_state.txt', 4).load_percentages()
+        result = termux_cpu.CPUGlobalStateReader(fpath='test/global_state.txt', n_cores=4).load_percentages()
         assert result == expected
 
     def test_core_frequencies(self):
